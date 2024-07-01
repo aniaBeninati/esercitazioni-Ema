@@ -14,11 +14,13 @@ function RandomNumber() {
 
   //Funzione che genera un numero casuale tra 1 e 100 con un personaggio casuale
   const generateRandomNumber = () => {
-    // Genero un numero casuale tra 1 e 100
+    // Genero un numero casuale tra 1 e 100 passando da un math.random che mi torna un numero con 
+    //la virgola dove x 100 torna fino a 99 e con il  + 1 arriva a 100. 
+    //Con il math.floor arrotonda per difetto a 99
     const number = Math.floor(Math.random() * 100) + 1;
     //inserisce numero casuale nello stato
     setRandomNumber(number);
-    //Genero un personaggio casuale
+    //Genero un personaggio casuale attraverso l'array con un indice da 9 a 0 con 
     const character = randomCharacters[Math.floor(Math.random() * randomCharacters.length)];
     //inserisce personaggio casuale nello stato
     setRandomCharacter(character);
