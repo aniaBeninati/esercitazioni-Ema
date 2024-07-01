@@ -1,0 +1,30 @@
+.menu {
+  text-align: center;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.menu h2 {
+  color: #ff6f61;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.menu li:hover {
+  color: #ff6f61;
+  font-weight: bold;
+}
