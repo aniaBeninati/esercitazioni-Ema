@@ -1,12 +1,12 @@
 .sidebar {
   background-color: #ffcc00;
   padding: 20px;
-  width: 200px;
+  width: 100px;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .sidebar ul {
@@ -18,17 +18,17 @@
 .sidebar li {
   margin: 15px 0;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; 
 }
 
 .sidebar a {
-  text-decoration: none;
-  color: #333;
-  display: block;
-  padding: 8px 12px;
+  text-decoration: none; 
+  color: #333; 
+  display: block; 
+  padding: 8px 12px; 
 }
 
 .sidebar a:hover {
-  color: #ff6f61;
-  font-weight: bold;
+  color: #ff6f61; 
+  font-weight: bold; 
 }
