@@ -1,0 +1,29 @@
+.random-number-container {
+    margin-top: 40px;
+  }
+  
+  .generate-button {
+    background-color: #03dac6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+  }
+  
+  .generate-button:hover {
+    background-color: #018786;
+    transform: scale(1.1);
+  }
+  
+  .random-number-display {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
