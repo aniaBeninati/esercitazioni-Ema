@@ -1,0 +1,16 @@
+.diceButton {
+  background: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1rem;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background 0.3s ease;
+}
+
+.diceButton:hover {
+  background: var(--light-cyan);
+}

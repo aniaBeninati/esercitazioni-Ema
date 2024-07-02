@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import styles from './App.module.css';
+import AdviceBox from './components/AdviceBox/AdviceBox';
 
 function App() {
-
   return (
-    <>
-      <div>
-       
-    </>
-  )
+    <div className={styles.app}>
+      <AdviceBox />
+    </div>
+  );
 }
 
-export default App
+export default App;

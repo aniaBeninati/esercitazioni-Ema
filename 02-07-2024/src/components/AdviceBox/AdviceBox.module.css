@@ -1,0 +1,33 @@
+.adviceBox {
+  background: var(--dark-grayish-blue);
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Dimensione massima della card */
+  margin: auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.adviceBox h1 {
+  color: var(--neon-green);
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.adviceBox p {
+  color: var(--light-cyan);
+  font-size: 28px; /* Dimensione del font per la citazione */
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.adviceBox .divider {
+  margin: 1.5rem 0;
+}
+
+.adviceBox .divider img {
+  width: 100%;
+}
