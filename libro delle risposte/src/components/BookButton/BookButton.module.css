@@ -1,0 +1,21 @@
+.bookButton {
+    background: var(--dark-gold);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem; /* Ridotto il padding */
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 2rem; /* Aumentato lo spazio superiore */
+  }
+  
+  .bookButton:hover {
+    transform: scale(1.1);
+    background: var(--gold);
+  }
+  
+  .bookButton img {
+    width: 30px; /* Ridotto la dimensione dell'icona */
+    height: 30px;
+    border-radius: 50%;
+  }

@@ -1,0 +1,22 @@
+.answerBox {
+    background: url('../../../public/images/il\ libro\ delle\ risposte.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    width: 320px;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    color: var(--gold); 
+  }
+  
+  .answerBox h1 {
+    font-size: 1.8rem; /* Aumentata la dimensione del testo */
+    margin-bottom: 3rem; /* Aumentato lo spazio inferiore */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
