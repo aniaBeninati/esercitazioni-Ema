@@ -16,7 +16,7 @@
   }
   
   .answerBox h1 {
-    font-size: 1.8rem; /* Aumentata la dimensione del testo */
-    margin-bottom: 3rem; /* Aumentato lo spazio inferiore */
+    font-size: 1.8rem; 
+    margin-bottom: 3rem; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
