@@ -4,6 +4,7 @@ import AdviceBox from './components/AdviceBox/AdviceBox';
 
 function App() {
   return (
+    // // Div contenitore principale con stili applicati
     <div className={styles.app}>
       <AdviceBox />
     </div>
