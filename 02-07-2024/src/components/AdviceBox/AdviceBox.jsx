@@ -19,7 +19,7 @@ const AdviceBox = () => {
     //contenitore principale dell card con lo stile applicato
     <div className={styles.adviceBox}>
       <h1>Advice #{adviceNumber}</h1>
-      <p>{advice}</p>
+      <p>"{advice}"</p>
       <div className={styles.divider}>
         <img
           src="/images/pattern-divider-mobile.svg"
