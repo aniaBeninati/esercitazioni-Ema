@@ -1,0 +1,30 @@
+:root {
+  --green-lighter: #ccf2e9; /* hsl(148, 38%, 91%) */
+  --green-medium: #00796b;  /* hsl(169, 82%, 27%) */
+  --green-medium-hover: #009688; /* hsl(169, 82%, 35%) */
+  --red: #e53935;          /* hsl(0, 66%, 54%) */
+  --white: #ffffff;        /* hsl(0, 0%, 100%) */
+  --grey-medium: #99aab5;  /* hsl(186, 15%, 59%) */
+  --grey-darker: #2b3e50;  /* hsl(187, 24%, 22%) */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: var(--green-lighter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, h2 {
+  color: var(--grey-darker);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

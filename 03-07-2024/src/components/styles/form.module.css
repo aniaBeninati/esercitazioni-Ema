@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  gap: 2rem; /*aggiungo uno spazio di 2rem tra gli elementi figli*/
+}
+
+.formContainer {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px; 
+  width: 100%;
+}
+
+.stateDisplay {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px; 
+  width: 100%;
+}
+
+.stateDisplay p {  /* Aggiungo uno spazio di 1rem tra i paragrafi */
+  margin-bottom: 1rem; 
+}
+
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--grey-darker);
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--grey-medium);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--grey-darker);
+  margin-bottom: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--green-medium);
+}
+
+.queryOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.queryOptions label {
+  display: flex;
+  align-items: center;
+}
+
+.queryOptions input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.formGroup input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.formGroup input[type="checkbox"]:focus {
+  outline: none;
+}
+
+.consentContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* Added margin-bottom to create space before the submit button */
+}
+
+.consentContainer input[type="checkbox"] {
+  margin-right: 0.5rem; 
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--green-medium);
+  color: var(--white); 
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--green-medium-hover);
+  outline: none;
+  color: var(--white); 
+}
+
+.errorMessage {
+  color: var(--red);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.successMessage {
+  background-color: var(--green-medium);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
