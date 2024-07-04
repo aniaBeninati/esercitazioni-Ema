@@ -12,9 +12,7 @@ const MortgageCalculator = ({ onCalculate }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setInput((prevState) => {
-      return { ...prevState, [name]: value };
-    });
+    setInput(prevState => ({ ...prevState, [name]: value }));
   };
 
   const handleSubmit = (e) => {

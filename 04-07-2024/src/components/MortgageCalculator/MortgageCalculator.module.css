@@ -129,11 +129,9 @@ label {
   background-color: hsl(61, 70%, 40%);
 }
 
-/*.currencySymbol {}
+.currencySymbol {}
 
 
 
 .termLabel {
-  border-left: 1px solid red;
-  background-color: red;
-}*/
+}

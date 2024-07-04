@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import MortgageCalculator from './components/MortgageCalculator/MortgageCalculator.jsx';
-import Result from './components/Result/Result.jsx';
-import styles from './App.module.css';
-import './index.css';
+import React, { useState } from "react";
+import MortgageCalculator from "./components/MortgageCalculator/MortgageCalculator.jsx";
+import Result from "./components/Result/Result.jsx";
+import styles from "./App.module.css";
+import "./index.css";
 
 const App = () => {
   const [result, setResult] = useState(null);
@@ -15,7 +15,7 @@ const App = () => {
 
     let monthlyPayment, totalRepayment;
 
-    if (type === 'repayment') {
+    if (type === "repayment") {
       const monthlyInterestRate = interestRate / 12;
       const numberOfPayments = years * 12;
       monthlyPayment =
@@ -28,8 +28,8 @@ const App = () => {
     }
 
     setResult({
-      monthlyPayment: monthlyPayment.toFixed(2),
-      totalRepayment: totalRepayment.toFixed(2),
+      monthlyPayment: monthlyPayment.toFixed(5),
+      totalRepayment: totalRepayment.toFixed(5),
     });
   };
 
