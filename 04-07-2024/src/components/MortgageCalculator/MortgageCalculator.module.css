@@ -129,9 +129,23 @@ label {
   background-color: hsl(61, 70%, 40%);
 }
 
-.currencySymbol {}
-
+.currencySymbol {
+  border:1px solid #13303F;
+  border-right:none;
+  background-color: #E3F4Fc;
+  color: #13303F;
+  font-weight: bold;
+  padding: 10px;
+  border-radius:6px 0px 0px 6px;   
+}
 
 
 .termLabel {
+  border:1px solid #13303F;
+  border-right:none;
+  background-color: #E3F4Fc;
+  color: #13303F;
+  font-weight: bold;
+  padding: 10px;
+  border-radius:6px 0px 0px 6px;   
 }
