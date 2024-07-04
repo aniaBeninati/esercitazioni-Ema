@@ -1,8 +1,30 @@
-# React + Vite
+Frontend Mentor - Soluzione per il calcolatore di rimborso del mutuo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Panoramica
+La sfida
+Gli utenti dovrebbero essere in grado di:
+
+Inserire le informazioni sul mutuo e vedere l'importo della rata mensile e il totale del rimborso dopo aver inviato il modulo
+Vedere i messaggi di validazione del modulo se un campo è incompleto
+Completare il modulo utilizzando solo la tastiera
+Visualizzare il layout ottimale per l'interfaccia a seconda delle dimensioni dello schermo del dispositivo
+Vedere gli stati di hover e focus per tutti gli elementi interattivi sulla pagina
+
+Il mio processo
+Costruito con
+Marcatura HTML5 semantica
+Proprietà CSS personalizzate
+Flexbox
+Griglia CSS
+Flusso di lavoro mobile-first
+React - Libreria JS
+Next.js - Framework React
+Styled Components - Per gli stili
+
+Cosa ho imparato
+
+Autore
+
+Stefania Beninati  - https://github.com/aniaBeninati/esercitazioni-Ema/tree/main/04-07-2024
