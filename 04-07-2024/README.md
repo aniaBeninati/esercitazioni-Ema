@@ -17,7 +17,7 @@ Vedere gli stati di hover e focus per tutti gli elementi interattivi sulla pagin
 
 ### Screenshot dell'esempio da seguire 
 
-![Url immagine challenge](../04-07-2024/src/design/desktop-design-completed.jpg)
+![Url immagine challenge](./design/desktop-design-empty.jpg)
 
 ## Il mio processo
 
