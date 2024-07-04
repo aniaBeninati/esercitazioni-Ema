@@ -1,35 +1,53 @@
-import React, { useState } from 'react';
-import styles from './MortgageCalculator.module.css';
+import React, { useState } from "react";
+import styles from "./MortgageCalculator.module.css";
 import IconCalculator from "../../assets/images/icon-calculator.svg";
 
+// Definisco il componente MortgageCalculator, che accetta onCalculate come prop
 const MortgageCalculator = ({ onCalculate }) => {
   const [input, setInput] = useState({
-    amount: '',
-    term: '',
-    rate: '',
-    type: 'repayment',
+    amount: "",
+    term: "",
+    rate: "",
+    type: "",
   });
 
+  // Funzione per gestire il cambiamento degli input del form
   const handleChange = (e) => {
+    // Estraggo il nome e il valore dall'evento
     const { name, value } = e.target;
-    setInput(prevState => ({ ...prevState, [name]: value }));
+    setInput((prevState) => {
+      // Aggiorno lo stato dell'input
+      return { ...prevState, [name]: value };
+      // Restituisce un nuovo stato con il valore aggiornato
+    });
   };
 
+  // Funzione per gestire l'invio del form
   const handleSubmit = (e) => {
     e.preventDefault();
+     // Chiama la funzione onCalculate con i valori dell'input
     onCalculate(input);
   };
 
   return (
+    // Ritorna il JSX del form
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.header}>
         <h1>Mortgage Calculator</h1>
-        <button type="button" className={styles.clearButton} onClick={() => setInput({ amount: '', term: '', rate: '', type: 'repayment' })}>Clear All</button>
+        <button
+          type="button"
+          className={styles.clearButton}
+          onClick={() =>
+            setInput({ amount: "", term: "", rate: "", type: "" })
+          }
+        >
+          Clear All
+        </button>
       </div>
       <div className={styles.field}>
         <label htmlFor="amount">Mortgage Amount</label>
         <div className={styles.inputGroup}>
-        <span className={styles.currencySymbol}>£</span>
+          <span className={styles.currencySymbol}>£</span>
           <input
             type="text"
             id="amount"
@@ -50,7 +68,7 @@ const MortgageCalculator = ({ onCalculate }) => {
               value={input.term}
               onChange={handleChange}
             />
-             <span className={styles.termLabel}>years</span>
+            <span className={styles.termLabel}>years</span>
           </div>
         </div>
         <div className={styles.field}>
@@ -75,7 +93,7 @@ const MortgageCalculator = ({ onCalculate }) => {
               type="radio"
               name="type"
               value="repayment"
-              checked={input.type === 'repayment'}
+              checked={input.type === "repayment"}
               onChange={handleChange}
             />
             <span></span>
@@ -86,7 +104,7 @@ const MortgageCalculator = ({ onCalculate }) => {
               type="radio"
               name="type"
               value="interestOnly"
-              checked={input.type === 'interestOnly'}
+              checked={input.type === "interestOnly"}
               onChange={handleChange}
             />
             <span></span>

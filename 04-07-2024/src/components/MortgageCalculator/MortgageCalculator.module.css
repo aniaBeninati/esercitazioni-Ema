@@ -39,7 +39,6 @@ label {
   border: 1px solid var(--slate-300);
   border-radius: 4px;
   padding: 8px;
-
 }
 
 .inputGroup input {
@@ -69,13 +68,13 @@ label {
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
   font-weight: bold;
-  color: var( --slate-900);
+  color: var(--slate-900);
   margin: 0;
 }
 
 .radioLabel:hover {
-  background-color:  #fafae0;
-  border: 1px solid var( --lime);
+  background-color: #fafae0;
+  border: 1px solid var(--lime);
 }
 
 .radioLabel input {
@@ -100,7 +99,7 @@ label {
 }
 
 .radioLabel input:checked + span::after {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   background-color: var(--lime);
@@ -130,22 +129,19 @@ label {
 }
 
 .currencySymbol {
-  border:1px solid #13303F;
-  border-right:none;
-  background-color: #E3F4Fc;
-  color: #13303F;
+  border-right: none;
+  background-color: #e3f4fc;
+  color: #13303f;
   font-weight: bold;
   padding: 10px;
-  border-radius:6px 0px 0px 6px;   
+  border-radius: 6px 0px 0px 6px;
 }
 
-
 .termLabel {
-  border:1px solid #13303F;
-  border-right:none;
-  background-color: #E3F4Fc;
-  color: #13303F;
+  border-right: none;
+  background-color: #e3f4fc;
+  color: #13303f;
   font-weight: bold;
   padding: 10px;
-  border-radius:6px 0px 0px 6px;   
+  border-radius: 6px 0px 0px 6px;
 }
