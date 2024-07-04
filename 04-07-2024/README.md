@@ -15,7 +15,7 @@ Completare il modulo utilizzando solo la tastiera
 Visualizzare il layout ottimale per l'interfaccia a seconda delle dimensioni dello schermo del dispositivo
 Vedere gli stati di hover e focus per tutti gli elementi interattivi sulla pagina
 
-### Screenshot
+### Screenshot dell'esempio da seguire 
 
 ![Url immagine challenge](../04-07-2024/src/design/desktop-design-completed.jpg)
 

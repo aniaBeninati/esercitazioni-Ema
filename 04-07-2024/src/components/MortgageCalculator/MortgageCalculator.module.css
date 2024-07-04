@@ -1,0 +1,139 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 15px;
+  color: var(--slate-300);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: var(--slate-500);
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--slate-300);
+  border-radius: 4px;
+  padding: 8px;
+
+}
+
+.inputGroup input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.inlineFields {
+  display: flex;
+  gap: 16px;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 2px solid var(--slate-300);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-weight: bold;
+  color: var( --slate-900);
+  margin: 0;
+}
+
+.radioLabel:hover {
+  background-color:  #fafae0;
+  border: 1px solid var( --lime);
+}
+
+.radioLabel input {
+  display: none;
+}
+
+.radioLabel input:checked + span {
+  background-color: var(--lime);
+  border: 1px solid var(--lime);
+  color: var(--white);
+}
+
+.radioLabel span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--slate-300);
+  border-radius: 50%;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.radioLabel input:checked + span::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--lime);
+  border-radius: 50%;
+}
+
+.calculateButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: hsl(61, 70%, 45%);
+  color: var(--slate-900);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 60%;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.calculateButton:hover {
+  background-color: hsl(61, 70%, 40%);
+}
+
+/*.currencySymbol {}
+
+
+
+.termLabel {
+  border-left: 1px solid red;
+  background-color: red;
+}*/
