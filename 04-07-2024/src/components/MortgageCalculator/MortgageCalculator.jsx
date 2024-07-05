@@ -11,6 +11,7 @@ const MortgageCalculator = ({ onCalculate }) => {
     type: "",
   });
 
+
   // Funzione per gestire il cambiamento degli input del form
   const handleChange = (e) => {
     // Estraggo il nome e il valore dall'evento con destructuring perchè e.target è un oggetto
@@ -37,8 +38,9 @@ const MortgageCalculator = ({ onCalculate }) => {
         <button
           type="button"
           className={styles.clearButton}
-          onClick={() =>
+          onClick={() => {
             setInput({ amount: "", term: "", rate: "", type: "" })
+          }
           }
         >
           Clear All
