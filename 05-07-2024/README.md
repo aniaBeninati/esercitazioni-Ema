@@ -1,8 +1,36 @@
-# React + Vite
+# Frontend Mentor - Soluzione del componente di prezzo interattivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Questa è una soluzione per la sfida del componente di prezzo interattivo su Frontend Mentor. Le sfide di Frontend Mentor aiutano a migliorare le tue competenze di coding costruendo progetti realistici.
 
-Currently, two official plugins are available:
+## Panoramica
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### La sfida
+
+Gli utenti dovrebbero essere in grado di:
+
+Visualizzare il layout ottimale per l'app a seconda delle dimensioni dello schermo del loro dispositivo
+Vedere gli stati di hover per tutti gli elementi interattivi sulla pagina
+Utilizzare il cursore e l'interruttore per visualizzare i prezzi per diversi numeri di visualizzazioni di pagina
+
+### Screenshot dell'esempio da seguire
+
+![Url immagine challenge](./design/desktop-design.jpg)
+
+## Il mio processo
+
+### Costruito con
+
+- Marcatura HTML5 semantica
+- Proprietà CSS personalizzate
+- Flexbox
+- Griglia CSS
+- Flusso di lavoro mobile-first
+- [React](https://reactjs.org/) - Libreria JS
+- [Next.js](https://nextjs.org/) - Framework React
+- [Styled Components](https://styled-components.com/) - Per gli stili
+
+### Cosa ho imparato
+
+Autore
+
+Stefania Beninati - https://github.com/aniaBeninati/esercitazioni-Ema/tree/main/05-07-2024
