@@ -13,7 +13,7 @@ const MortgageCalculator = ({ onCalculate }) => {
 
   // Funzione per gestire il cambiamento degli input del form
   const handleChange = (e) => {
-    // Estraggo il nome e il valore dall'evento
+    // Estraggo il nome e il valore dall'evento con destructuring perchè e.target è un oggetto
     const { name, value } = e.target;
     setInput((prevState) => {
       // Aggiorno lo stato dell'input
