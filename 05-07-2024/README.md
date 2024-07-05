@@ -16,6 +16,31 @@ Utilizzare il cursore e l'interruttore per visualizzare i prezzi per diversi num
 
 ![Url immagine challenge](./design/desktop-design.jpg)
 
+#Struttura Progetto
+
+src/
+├── assets/
+│   └── images/
+│       ├── bg-pattern.svg
+│       ├── icon-check.svg
+│       ├── icon-slider.svg
+│       ├── pattern-circles.svg
+├── components/
+│   ├── PriceCard/
+│   │   ├── PriceCard.jsx
+│   │   ├── PriceCard.module.css
+│   ├── Slider/
+│   │   ├── Slider.jsx
+│   │   ├── Slider.module.css
+│   ├── ToggleSwitch/
+│   │   ├── ToggleSwitch.jsx
+│   │   ├── ToggleSwitch.module.css
+├── App.jsx
+├── App.module.css
+├── index.css
+├── main.jsx
+
+
 ## Il mio processo
 
 ### Costruito con

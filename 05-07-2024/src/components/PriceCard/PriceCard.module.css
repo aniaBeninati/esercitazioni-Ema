@@ -1,0 +1,96 @@
+.pricingComponent {
+  background: var(--white);
+  padding: 2rem 5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 600px;
+  margin: 80px;
+}
+
+.topComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageViews {
+  font-size: 1rem;
+  color: var(--grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  color: var(--dark-desaturated-blue);
+  margin-bottom: 1rem;
+}
+
+.price span {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+}
+
+.billingToggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  gap: 20px;
+color: var(--grayish-blue);
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  color: var(--grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.features li {
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.features li img {
+  margin-right: .5rem;
+}
+
+.ctaButton {
+  background: var(--dark-desaturated-blue);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background .3s;
+  width: 200px;
+}
+
+.ctaButton:hover {
+  background: hsl(227, 35%, 30%);
+}
+
+.discount {
+  color: var(--light-red);
+  background: var(--light-grayish-red);
+  padding: .2rem .5rem;
+  border-radius: 10px;
+  margin-left: .5rem;
+}
+
+.bottomComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.lineHr {
+  margin-bottom: 50px;
+}
