@@ -93,3 +93,7 @@ li {
   flex-grow: 1;
 }
 
+.centeredButton {
+  display: flex;
+  justify-content: center;
+}
