@@ -1,0 +1,21 @@
+.header {
+  text-align: center;
+  padding: 20px;
+  background-image: url('https://melographicstudio.com/wp-content/uploads/2017/10/COMPOSIZIONE-OPK-1170x780.jpg');
+  background-size: cover;
+  color: #8b4513;
+  width: 100vw;
+  position: relative;
+  
+}
+
+
+.header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 25px;
+  margin-top: 0;
+}

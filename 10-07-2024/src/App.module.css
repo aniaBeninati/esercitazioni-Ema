@@ -1,0 +1,75 @@
+form {
+  background-color: var(--form-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--card-shadow);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex; 
+  flex-direction: column; 
+  gap: 5px; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input, select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  width: 100%; 
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px 20px;
+  width: auto;
+}
+
+button:hover {
+  background-color: var(--primary-color-hover);
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--card-bg-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.filterGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.central {
+  display: flex;
+  justify-content: center;
+}

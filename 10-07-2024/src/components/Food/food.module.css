@@ -1,0 +1,54 @@
+.foodCard {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--card-shadow);
+}
+
+.foodImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.foodDetails {
+  flex-grow: 1;
+}
+
+.foodDetails h2 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--header-color);
+}
+
+.foodDetails p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.central {
+  display: flex;
+  justify-content: center;
+  
+}
