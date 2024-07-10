@@ -88,5 +88,65 @@ const initialState = [
     ingredienti_principali: ["gamberi", "verdure", "farina", "acqua frizzante", "olio"],
     tipo_di_piatto: "secondo",
     immagine: "https://learntocook.com/wp-content/uploads/2013/12/491326455-1024x683.jpg"
+  },
+  {
+    id: self.crypto.randomUUID(),
+    nome: "Paella",
+    tipo_di_cucina: "spagnola",
+    difficolta: "media",
+    tempo_di_preparazione: "1 ora",
+    ingredienti_principali: ["riso", "pollo", "gamberi", "piselli", "pomodori", "peperoni"],
+    tipo_di_piatto: "secondo",
+    immagine: "https://example.com/paella.jpg"
+  },
+  {
+    id: self.crypto.randomUUID(),
+    nome: "Falafel",
+    tipo_di_cucina: "mediorientale",
+    difficolta: "facile",
+    tempo_di_preparazione: "30 minuti",
+    ingredienti_principali: ["ceci", "cipolla", "aglio", "cumino", "prezzemolo"],
+    tipo_di_piatto: "antipasto",
+    immagine: "https://example.com/falafel.jpg"
+  },
+  {
+    id: self.crypto.randomUUID(),
+    nome: "Croque Monsieur",
+    tipo_di_cucina: "francese",
+    difficolta: "facile",
+    tempo_di_preparazione: "20 minuti",
+    ingredienti_principali: ["pane", "prosciutto", "formaggio", "besciamella"],
+    tipo_di_piatto: "secondo",
+    immagine: "https://example.com/croque_monsieur.jpg"
+  },
+  {
+    id: self.crypto.randomUUID(),
+    nome: "Pad Thai",
+    tipo_di_cucina: "tailandese",
+    difficolta: "media",
+    tempo_di_preparazione: "40 minuti",
+    ingredienti_principali: ["noodles", "gamberi", "uova", "arachidi", "tofu", "lime"],
+    tipo_di_piatto: "primo",
+    immagine: "https://example.com/pad_thai.jpg"
+  },
+  {
+    id: self.crypto.randomUUID(),
+    nome: "Curry di Pollo",
+    tipo_di_cucina: "indiana",
+    difficolta: "media",
+    tempo_di_preparazione: "50 minuti",
+    ingredienti_principali: ["pollo", "latte di cocco", "pomodori", "cipolla", "spezie"],
+    tipo_di_piatto: "secondo",
+    immagine: "https://example.com/curry_pollo.jpg"
+  },
+  {
+    id: self.crypto.randomUUID(),
+    nome: "Baklava",
+    tipo_di_cucina: "mediorientale",
+    difficolta: "difficile",
+    tempo_di_preparazione: "1 ora",
+    ingredienti_principali: ["pasta fillo", "noci", "miele", "burro"],
+    tipo_di_piatto: "dessert",
+    immagine: "https://example.com/baklava.jpg"
   }
 ];
