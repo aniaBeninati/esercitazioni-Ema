@@ -2,8 +2,22 @@
 
 ### La sfida
 
-Realizzare un catalogo di qualunque cosa desideriate, con massima libertà espressiva. Nel catalogo dovremo poter aggiungere elementi tramite una form e mostrarli a video, con la possibilità di cancellarli, proprio come abbiamo fatto ieri. Questa volta, però, avremo bisogno di uno stato per filtrare gli elementi del catalogo. Scegliete voi come filtrare i dati. Ad esempio, in un catalogo di Pokémon, potremmo filtrare per mostrare tutti i Pokémon di tipo acqua.
-Create un componente layout e usate il children per passarci dati
+La tua sfida è costruire questa pagina prodotto di e-commerce e farla sembrare il più possibile simile al design.
+
+Puoi utilizzare qualsiasi strumento tu voglia per aiutarti a completare la sfida. Quindi, se hai qualcosa su cui vuoi esercitarti, sentiti libero di provarlo.
+
+I tuoi utenti dovrebbero essere in grado di:
+
+Aprire una galleria lightbox cliccando sulla grande immagine del prodotto
+Cambiare la grande immagine del prodotto cliccando sulle piccole immagini in miniatura
+Aggiungere articoli al carrello
+Visualizzare il carrello e rimuovere articoli da esso
+Visualizzare il layout ottimale del sito a seconda delle dimensioni dello schermo del loro dispositivo
+Vedere gli stati hover per tutti gli elementi interattivi della pagina
+
+Nel farlo, seguite ciò che abbiamo fatto in classe, provate a fare dei cambiamenti, a testare il codice e creare componenti che prendono funzioni e poi provate vedere come è possibile non dover passare direttamente una funzione al componente stesso.
+Il nostro obiettivo è rendere i nostri componenti il più possibile liberi e indipendenti!
+Metteteci del vostro estro!
 
 ### Screenshot dell'esempio da seguire
 
