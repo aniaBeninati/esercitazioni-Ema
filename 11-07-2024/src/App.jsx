@@ -107,10 +107,11 @@ const products = [
 ];
 
 function App() {
-  const [cart, setCart] = useState(0);
+  const [cart, setCart] = useState(0);// Stato per il conteggio del carrello
 
+  // Funzione per aggiornare il conteggio del carrello
   const handleUpdateCart = (count) => {
-    setCart(count);
+    setCart(count); // Imposta il nuovo conteggio del carrello
   };
 
   return (
@@ -137,10 +138,12 @@ function App() {
       </header>
       <hr className={styles.separator} />
       <main className={styles.main}>
-        {products.map(product => (
-          <section key={product.id} className={styles.productSection}>
-            <ProductLightBox product={product} />
-            <div className={styles.productDetails}>
+      {/* Mappa l'array dei prodotti per generare una sezione per ciascun prodotto */}
+      {products.map(product => (
+        // Ogni prodotto viene racchiuso in una sezione con una chiave unica basata sull'id del prodotto
+        <section key={product.id} className={styles.productSection}>
+          <ProductLightBox product={product} />
+          <div className={styles.productDetails}>
               <h1>{product.name}</h1>
               <p>{product.description}</p>
               <p className={styles.price}>$125.00 <span className={styles.discount}>50%</span></p>
