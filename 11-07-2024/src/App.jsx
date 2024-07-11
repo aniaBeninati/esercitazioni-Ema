@@ -6,6 +6,10 @@ import ProductLightBox from "./components/product-lightbox/ProductLightBox.jsx";
 import styles from "./styles/App.module.css";
 import NikeLogo from "../src/assets/images/logo-nike-vernice-adesivo-prespaziato.jpg";
 
+/**
+ * Array di prodotti con informazioni dettagliate
+ */
+
 const products = [
   {
     id: self.crypto.randomUUID(),
@@ -106,10 +110,17 @@ const products = [
   },
 ];
 
+/**
+ * Componente principale dell'applicazione
+ * @component
+ */
 function App() {
   const [cart, setCart] = useState(0);// Stato per il conteggio del carrello
 
-  // Funzione per aggiornare il conteggio del carrello
+   /**
+   * Funzione per aggiornare il conteggio del carrello
+   * @param {number} count - Nuovo conteggio del carrello
+   */
   const handleUpdateCart = (count) => {
     setCart(count); // Imposta il nuovo conteggio del carrello
   };

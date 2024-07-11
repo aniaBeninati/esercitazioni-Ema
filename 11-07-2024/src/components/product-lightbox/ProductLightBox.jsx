@@ -4,10 +4,20 @@ import ShowBox from '../showbox/ShowBox';
 import ThumbNail from '../thumbnail/ThumbNail';
 import styles from './ProductLightBox.module.css';
 
+/**
+ * Componente ProductLightBox
+ * @component
+ * @param {Object} props - Proprietà del componente
+ * @param {Object} props.product - Dati del prodotto
+ * @returns {JSX.Element} - Ritorna un elemento JSX
+ */
 function ProductLightBox({ product }) {
   const [selectedImage, setSelectedImage] = useState(product.mainImage); // Stato per l'immagine selezionata
 
-// Funzione per gestire il click sulle miniature
+ /**
+   * Gestisce il click sulla miniatura
+   * @param {string} thumb - URL della miniatura cliccata
+   */
   const handleThumbnailClick = (thumb) => {
     setSelectedImage(thumb); // Aggiorna l'immagine selezionata
   };
