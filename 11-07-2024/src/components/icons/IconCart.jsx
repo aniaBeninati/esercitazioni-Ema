@@ -1,3 +1,5 @@
+import React from 'react';
+
 function IconCart({ fill = "#69707D" }) {
     return (
       <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
