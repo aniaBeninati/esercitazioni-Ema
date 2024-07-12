@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import ShowBox from '../showbox/ShowBox';
-import ThumbNail from '../thumbnail/ThumbNail';
+import ThumbNail from '../thumbnail/ThumbNail.jsx';
 import styles from './ProductLightBox.module.css';
 
 /**

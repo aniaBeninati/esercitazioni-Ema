@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Counter.module.css';
 import classNames from 'classnames';
-import IconMinus from '../icons/IconMinus';
-import IconPlus from '../icons/IconPlus';
+import IconMinus from '../icons/IconMinus.jsx';
+import IconPlus from '../icons/IconPlus.jsx';
 
 /**
  * Componente Counter
