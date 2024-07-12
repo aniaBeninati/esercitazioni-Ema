@@ -1,5 +1,5 @@
 import React from 'react';
-import EquilibriumCard from './components/EquilibriumCard.jsx';
+import EquilibriumCard from './components/EquilibriumCard';
 
 const App = () => {
   return (
