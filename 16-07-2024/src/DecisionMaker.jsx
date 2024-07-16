@@ -1,39 +1,70 @@
 import React, { useState, useEffect } from 'react';
 
+/**
+ * Componente DecisionMaker
+ * @component
+ * @returns {JSX.Element} - Ritorna il componente DecisionMaker
+ */
 const DecisionMaker = () => {
-  // Utilizziamo useState per gestire lo stato della domanda e della risposta
+  // Utilizzo useState per gestire lo stato della domanda e della risposta
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState(null);
 
-  // useEffect per caricare la risposta salvata nel localStorage al montaggio del componente
-  useEffect(() => {
-    const savedAnswer = localStorage.getItem('answer');
-    if (savedAnswer) {
-      console.log('Found answer in localStorage:', savedAnswer);
-      setAnswer(JSON.parse(savedAnswer));
-    }
-  }, []);
-
-  // Funzione per ottenere una risposta dall'API
+  /**
+   * Funzione per ottenere una risposta dall'API
+   * @async
+   * @function fetchAnswer
+   * @returns {Promise<void>}
+   */
   const fetchAnswer = async () => {
     try {
       console.log('Fetching answer...');
+      // Eseguo una richiesta GET all'API per ottenere una risposta casuale
       const response = await fetch('https://yesno.wtf/api');
       const data = await response.json();
       console.log('Answer fetched:', data);
+
+      // Creo un nuovo oggetto risposta contenente la domanda e la risposta
+      const newAnswer = { question, answer: data };
+      // Recupero tutte le risposte salvate nel localStorage o inizializzo un array vuoto
+      const savedAnswers = JSON.parse(localStorage.getItem('answers')) || [];
+      // Aggiorno l'array di risposte con la nuova risposta
+      const updatedAnswers = [...savedAnswers, newAnswer];
+      
+      // Aggiorno lo stato con la nuova risposta
       setAnswer(data);
-      localStorage.setItem('answer', JSON.stringify(data));
-      console.log('Answer saved to localStorage');
+      // Salvo l'array di risposte aggiornato nel localStorage
+      localStorage.setItem('answers', JSON.stringify(updatedAnswers));
+      console.log('Question and answers saved to localStorage');
     } catch (error) {
       console.error('Error fetching the answer:', error);
     }
   };
 
-  // Gestisce il clic del pulsante e chiama fetchAnswer
+  /**
+   * Gestisco il clic del pulsante e chiamo fetchAnswer
+   * @function handleAskQuestion
+   */
   const handleAskQuestion = () => {
     console.log('Question asked:', question);
     fetchAnswer();
   };
+
+  /**
+   * Effetto per caricare le risposte salvate nel localStorage alla ricostruzione del componente
+   * @function useEffect
+   */
+  useEffect(() => {
+    const savedAnswers = localStorage.getItem('answers');
+    if (savedAnswers) {
+      console.log('Found answers in localStorage:', savedAnswers);
+    }
+    // Pulizia del localStorage al ricaricamento della pagina
+    return () => {
+      localStorage.removeItem('answers');
+      console.log('Answers removed from localStorage');
+    };
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-white p-4">
