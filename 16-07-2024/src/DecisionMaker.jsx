@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DecisionMaker = () => {
   // Utilizziamo useState per gestire lo stato della domanda e della risposta
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState(null);
+
+  // useEffect per caricare la risposta salvata nel localStorage al montaggio del componente
+  useEffect(() => {
+    const savedAnswer = localStorage.getItem('answer');
+    if (savedAnswer) {
+      console.log('Found answer in localStorage:', savedAnswer);
+      setAnswer(JSON.parse(savedAnswer));
+    }
+  }, []);
 
   // Funzione per ottenere una risposta dall'API
   const fetchAnswer = async () => {
@@ -13,6 +22,8 @@ const DecisionMaker = () => {
       const data = await response.json();
       console.log('Answer fetched:', data);
       setAnswer(data);
+      localStorage.setItem('answer', JSON.stringify(data));
+      console.log('Answer saved to localStorage');
     } catch (error) {
       console.error('Error fetching the answer:', error);
     }
