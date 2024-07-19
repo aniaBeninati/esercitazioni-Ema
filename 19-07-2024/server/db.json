@@ -1,0 +1,28 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "title": "Ventilatore bellissimo",
+        "description": "lorem ipsum",
+        "price": "100",
+        "category": "fuffa",
+        "discount": "20"
+      },
+      {
+        "id": "2",
+        "title": "Ventilatore brutto",
+        "description": "lorem ipsum",
+        "price": "100",
+        "category": "fuffa",
+        "discount": "20"
+      },
+      {
+        "id": "3",
+        "title": "Ventilatore sono indeciso",
+        "description": "lorem ipsum",
+        "price": "100",
+        "category": "fuffa",
+        "discount": "20"
+      }
+    ]
+  }
