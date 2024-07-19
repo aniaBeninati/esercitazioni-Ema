@@ -2,27 +2,184 @@
     "products": [
       {
         "id": "1",
-        "title": "Ventilatore bellissimo",
-        "description": "lorem ipsum",
-        "price": "100",
-        "category": "fuffa",
-        "discount": "20"
+        "artista": "Travis Scott",
+        "nomeAlbum": "Astroworld",
+        "anno": "2018",
+        "descrizione": "Un album che ha definito il sound della trap moderna, ricco di collaborazioni e sonorità innovative.",
+        "immagine": "https://media.karousell.com/media/photos/products/2021/12/18/travis_scott__astroworld_vinyl_1639798547_14f2472f.jpg",
+        "prezzo": "29.99€"
       },
       {
         "id": "2",
-        "title": "Ventilatore brutto",
-        "description": "lorem ipsum",
-        "price": "100",
-        "category": "fuffa",
-        "discount": "20"
+        "artista": "Snoop Dogg",
+        "nomeAlbum": "Doggystyle",
+        "anno": "1993",
+        "descrizione": "Il debutto leggendario di Snoop Dogg che ha segnato un'era nell'hip-hop West Coast.",
+        "immagine": "https://m.media-amazon.com/images/I/81KNOXFSdHL._UF1000,1000_QL80_.jpg",
+        "prezzo": "24.99€"
       },
       {
         "id": "3",
-        "title": "Ventilatore sono indeciso",
-        "description": "lorem ipsum",
-        "price": "100",
-        "category": "fuffa",
-        "discount": "20"
+        "artista": "Kanye West",
+        "nomeAlbum": "My Beautiful Dark Twisted Fantasy",
+        "anno": "2010",
+        "descrizione": "Un capolavoro visionario che ha consolidato Kanye West come uno dei più grandi artisti della sua generazione.",
+        "immagine": "https://m.media-amazon.com/images/I/51Yl3qf44vL._UF1000,1000_QL80_.jpg",
+        "prezzo": "34.99€"
+      },
+      {
+        "id": "4",
+        "artista": "Kendrick Lamar",
+        "nomeAlbum": "To Pimp a Butterfly",
+        "anno": "2015",
+        "descrizione": "Un album rivoluzionario che esplora tematiche sociali e politiche con liriche profonde e complesse.",
+        "immagine": "https://www.shugarecords.com/cdn/shop/products/418467121309-1000_1200x1200.jpg",
+        "prezzo": "27.99€"
+      },
+      {
+        "id": "5",
+        "artista": "Dr. Dre",
+        "nomeAlbum": "The Chronic",
+        "anno": "1992",
+        "descrizione": "Un classico del G-funk che ha introdotto il mondo a Snoop Dogg e ridefinito l'hip-hop West Coast.",
+        "immagine": "https://m.media-amazon.com/images/I/51ZtnY1CyAL._UF1000,1000_QL80_.jpg",
+        "prezzo": "31.99€"
+      },
+      {
+        "id": "6",
+        "artista": "J. Cole",
+        "nomeAlbum": "2014 Forest Hills Drive",
+        "anno": "2014",
+        "descrizione": "Un album personale e introspezione che ha cementato J. Cole come una forza potente nel rap moderno.",
+        "immagine": "https://m.media-amazon.com/images/I/61eJRuiylzL._UF1000,1000_QL80_.jpg",
+        "prezzo": "28.99€"
+      },
+      {
+        "id": "7",
+        "artista": "Nas",
+        "nomeAlbum": "Illmatic",
+        "anno": "1994",
+        "descrizione": "Considerato uno dei migliori album hip-hop di tutti i tempi, 'Illmatic' ha stabilito Nas come una leggenda del rap.",
+        "immagine": "https://m.media-amazon.com/images/I/61xl4fYW+gL._UF1000,1000_QL80_.jpg",
+        "prezzo": "26.99€"
+      },
+      {
+        "id": "8",
+        "artista": "OutKast",
+        "nomeAlbum": "Stankonia",
+        "anno": "2000",
+        "descrizione": "Un album innovativo che ha mescolato vari generi e introdotto OutKast a un pubblico mainstream.",
+        "immagine": "https://freshproducerecords.com/cdn/shop/products/315121_600x600.jpg?v=1669917239",
+        "prezzo": "27.99€"
+      },
+      {
+        "id": "9",
+        "artista": "Jay-Z",
+        "nomeAlbum": "The Blueprint",
+        "anno": "2001",
+        "descrizione": "Un classico del rap che ha solidificato Jay-Z come uno dei più grandi MC di tutti i tempi.",
+        "immagine": "https://s3.us-east-1.amazonaws.com/product-image-bucket-prod-us/288537-Product-0-I-637515905947456711.jpg",
+        "prezzo": "30.99€"
+      },
+      {
+        "id": "10",
+        "artista": "Tupac Shakur",
+        "nomeAlbum": "All Eyez on Me",
+        "anno": "1996",
+        "descrizione": "L'ultimo album pubblicato durante la vita di Tupac, ricco di successi e profondi testi.",
+        "immagine": "https://m.media-amazon.com/images/I/51qUhehBgrL._UF1000,1000_QL80_.jpg",
+        "prezzo": "32.99€"
+      },
+      {
+        "id": "11",
+        "artista": "Wu-Tang Clan",
+        "nomeAlbum": "Enter the Wu-Tang (36 Chambers)",
+        "anno": "1993",
+        "descrizione": "Un album seminale che ha introdotto il mondo al suono crudo e collettivo del Wu-Tang Clan.",
+        "immagine": "https://voiceshop.pl/userdata/public/gfx/43548/Wu-Tang-Clan_Enter-The-Wu-Tang-36-Chambers-Gold-Marbled-Vinyl_2.jpg",
+        "prezzo": "29.99€"
+      },
+      {
+        "id": "12",
+        "artista": "The Notorious B.I.G.",
+        "nomeAlbum": "Ready to Die",
+        "anno": "1994",
+        "descrizione": "Il debutto di Biggie che ha definito l'hip-hop East Coast e la sua carriera leggendaria.",
+        "immagine": "https://m.media-amazon.com/images/I/51EnMphGX0L._UF1000,1000_QL80_.jpg",
+        "prezzo": "31.99€"
+      },
+      {
+        "id": "13",
+        "artista": "Eminem",
+        "nomeAlbum": "The Marshall Mathers LP",
+        "anno": "2000",
+        "descrizione": "Un album controverso e rivoluzionario che ha consolidato Eminem come uno dei migliori rapper di sempre.",
+        "immagine": "https://cdn.shopify.com/s/files/1/0414/0557/9425/files/01_62_6965577d-ebae-466d-abc0-d965f882ba29.jpg?v=1695817695",
+        "prezzo": "33.99€"
+      },
+      {
+        "id": "14",
+        "artista": "A Tribe Called Quest",
+        "nomeAlbum": "The Low End Theory",
+        "anno": "1991",
+        "descrizione": "Un album che ha mescolato jazz e rap in modo innovativo, influenzando generazioni future di artisti.",
+        "immagine": "https://m.media-amazon.com/images/I/61OkhSbFuFL._UF1000,1000_QL80_.jpg",
+        "prezzo": "28.99€"
+      },
+      {
+        "id": "15",
+        "artista": "Tyler, The Creator",
+        "nomeAlbum": "IGOR",
+        "anno": "2019",
+        "descrizione": "Un album sperimentale che ha mostrato la crescita artistica di Tyler e ha vinto un Grammy.",
+        "immagine": "https://m.media-amazon.com/images/I/71EJUlo9W6L._UF1000,1000_QL80_.jpg",
+        "prezzo": "30.99€"
+      },
+      {
+        "id": "16",
+        "artista": "Run-D.M.C.",
+        "nomeAlbum": "Raising Hell",
+        "anno": "1986",
+        "descrizione": "Un album pionieristico che ha portato l'hip-hop nel mainstream con successi come 'Walk This Way'.",
+        "immagine": "https://m.media-amazon.com/images/I/51wZRJ9NjrL._UF1000,1000_QL80_.jpg",
+        "prezzo": "26.99€"
+      },
+      {
+        "id": "17",
+        "artista": "Ice Cube",
+        "nomeAlbum": "AmeriKKKa's Most Wanted",
+        "anno": "1990",
+        "descrizione": "Un potente debutto solista che ha affrontato temi sociali e politici con intensità.",
+        "immagine": "https://www.turntablelab.com/cdn/shop/products/icecube-amerikkka1_640x640.jpg?v=1571263463",
+        "prezzo": "29.99€"
+      },
+      {
+        "id": "18",
+        "artista": "Lauryn Hill",
+        "nomeAlbum": "The Miseducation of Lauryn Hill",
+        "anno": "1998",
+        "descrizione": "Un album che ha mescolato rap, R&B e soul, vincendo numerosi Grammy e definendo una generazione.",
+        "immagine": "https://m.media-amazon.com/images/I/51hqvzR0z2L._UF1000,1000_QL80_.jpg",
+        "prezzo": "32.99€"
+      },
+      {
+        "id": "19",
+        "artista": "Chance the Rapper",
+        "nomeAlbum": "Coloring Book",
+        "anno": "2016",
+        "descrizione": "Un mixtape innovativo che ha vinto un Grammy senza una release fisica, celebrando la libertà artistica.",
+        "immagine": "https://m.media-amazon.com/images/I/41OiZd1qTPS._UF894,1000_QL80_.jpg",
+        "prezzo": "25.99€"
+      },
+      {
+        "id": "20",
+        "artista": "Mobb Deep",
+        "nomeAlbum": "The Infamous",
+        "anno": "1995",
+        "descrizione": "Un album crudo e oscuro che ha definito il sound dell'hip-hop East Coast degli anni '90.",
+        "immagine": "https://m.media-amazon.com/images/I/71vdlILNinL._UF894,1000_QL80_DpWeblab_.jpg",
+        "prezzo": "30.99€"
       }
     ]
   }
+  
