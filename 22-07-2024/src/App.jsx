@@ -1,6 +1,6 @@
-import { labels } from "./api/pippi";
+import { labels } from "./api/PerfumeHub";
 import { useEffect, useState } from "react";
-import { getPerfumeList } from "./api/pippi";
+import { getPerfumeList } from "./api/PerfumeHub";
 
 function App() {
   const [perfumeList, setPerfumeList] = useState([]);
