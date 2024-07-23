@@ -1,6 +1,6 @@
-import { labels } from "./api/PerfumeHub";
+import { labels } from "./api/perfumeClient";
 import { useEffect, useState } from "react";
-import { getPerfumeList } from "./api/PerfumeHub";
+import { getPerfumeList } from "./api/perfumeClient";
 
 function App() {
   const [perfumeList, setPerfumeList] = useState([]);
