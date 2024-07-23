@@ -21,9 +21,6 @@ function App() {
     getPerfumes();
   }, []);
 
-  useEffect(() => {
-    console.log(perfumeList);
-  }, [perfumeList]);
 
   if (isLoading) return <p>is loading..</p>;
 
