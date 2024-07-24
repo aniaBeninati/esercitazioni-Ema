@@ -6,4 +6,6 @@ export const labels = {
     perfumeTableBtnDetail: "Details",
     perfumeList: "Perfume List",
     navHome: "Home",
+
+    errorHuHo:"Hu-oh!"
 };

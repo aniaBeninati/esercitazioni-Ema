@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { getPerfumeDetail } from "../api/perfumeClient";
 import { useEffect, useState } from "react";
 import ErrorComponent from "../components/ErrorComponents";
-import { labels } from "../data/labels";
+import { labels } from "../data/Labels";
 
 function PerfumeDetailPage() {
     const { id } = useParams();

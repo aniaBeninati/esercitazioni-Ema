@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getPerfumeList } from "./api/perfumeClient";
-import { labels } from "./data/labels";
+import { labels } from "./data/Labels";
 import { Link } from "react-router-dom";
 
 function App() {
