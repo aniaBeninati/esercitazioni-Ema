@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { getPerfumeDetail } from "../api/perfumeClient";
 import { useEffect, useState } from "react";
-import ErrorComponent from "../components/ErrorComponents";
-import { labels } from "../data/labels";
+import ErrorComponents from "../components/ErrorComponents";
+import { labels } from "../data/Labels";
 
 function PerfumeDetailPage() {
     const { id } = useParams();
@@ -26,7 +26,7 @@ function PerfumeDetailPage() {
         getPerfume(id);
     }, [id]);
 
-    if (isError.isError) return <ErrorComponent message={isError.message} />;
+    if (isError.isError) return <ErrorComponents message={isError.message} />;
 
     return (
         <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -73,10 +73,10 @@ function PerfumeDetailPage() {
                         <div className="lg:pr-4">
                             <div className="lg:max-w-lg">
                                 <p className="text-base font-semibold leading-7 text-indigo-600">
-                                    {labels.perfumeTableProducer}: {perfume.producer}
+                                    {labels.perfumeTableBrand}: {perfume.brand}
                                 </p>
                                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                    {perfume.title}
+                                    {perfume.name}
                                 </h1>
                                 <p className="mt-6 text-xl leading-8 text-gray-700">
                                     {perfume.description}
@@ -90,7 +90,7 @@ function PerfumeDetailPage() {
                         <div className="w-[48rem] max-w-none bg-gray-300 h-72 rounded-xl"></div>
                     ) : (
                         <img
-                            alt={perfume.title}
+                            alt={perfume.name}
                             src={perfume.image_url}
                             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                         />

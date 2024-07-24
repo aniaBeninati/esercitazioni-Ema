@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { labels } from "../data/labels";
+import { labels } from "../data/Labels";
 
 const menuList = [{ name: labels.navHome, path: "/" }];
 
