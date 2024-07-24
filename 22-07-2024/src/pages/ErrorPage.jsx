@@ -1,4 +1,4 @@
-import ErrorComponent from "../components/ErrorComponents";
+import ErrorComponents from "../components/ErrorComponents";
 import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
 
