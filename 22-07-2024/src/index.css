@@ -11,3 +11,9 @@
     @apply text-xl;
   }
 }
+
+
+body {
+  background: url('https://media.istockphoto.com/id/1399637805/it/foto/vista-dallalto-posa-piatta-di-una-serie-di-bottiglie-di-profumo-su-uno-sfondo-bianco-beige.webp?b=1&s=170667a&w=0&k=20&c=acJZOYWa5tjSz4U-isDucgpU3HdUOXq5dHXyvjTBLsk=') no-repeat center center fixed;
+  background-size: cover;
+}
