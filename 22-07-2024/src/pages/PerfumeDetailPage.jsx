@@ -73,10 +73,10 @@ function PerfumeDetailPage() {
                         <div className="lg:pr-4">
                             <div className="lg:max-w-lg">
                                 <p className="text-base font-semibold leading-7 text-indigo-600">
-                                    {labels.perfumeTableProducer}: {perfume.producer}
+                                    {labels.perfumeTableBrand}: {perfume.brand}
                                 </p>
                                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                    {perfume.title}
+                                    {perfume.name}
                                 </h1>
                                 <p className="mt-6 text-xl leading-8 text-gray-700">
                                     {perfume.description}
@@ -90,7 +90,7 @@ function PerfumeDetailPage() {
                         <div className="w-[48rem] max-w-none bg-gray-300 h-72 rounded-xl"></div>
                     ) : (
                         <img
-                            alt={perfume.title}
+                            alt={perfume.name}
                             src={perfume.image_url}
                             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                         />

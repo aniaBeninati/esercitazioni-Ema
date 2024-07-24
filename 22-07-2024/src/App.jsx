@@ -37,10 +37,10 @@ function App() {
                             <thead className="text-left">
                                 <tr>
                                     <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                                        {labels.perfumeTableTitle}
+                                        {labels.perfumeTableName}
                                     </th>
                                     <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                                        {labels.perfumeTableProducer}
+                                        {labels.perfumeTableBrand}
                                     </th>
                                     <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                                         {labels.perfumeTableDescription}
@@ -56,10 +56,10 @@ function App() {
                                     return (
                                         <tr key={perfume.id}>
                                             <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                                                {perfume.title}
+                                                {perfume.name}
                                             </td>
                                             <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                                                {perfume.producer}
+                                                {perfume.brand}
                                             </td>
                                             <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                                                 {perfume.description}

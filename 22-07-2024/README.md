@@ -43,29 +43,25 @@ Quinto rilascio:
 
 perfumes = [
 {
-"id": 1,
-"title": "Esempio Profumo 1",
-"producer": "Casa Profumi 1",
-"description": "Descrizione del profumo 1",
-"price": 50.0,
-"fragrances": ["Rosa", "Lavanda"],
-"for_men": True,
-"for_women": False,
-"for_kids": False,
-"image_url": "http://example.com/image1.jpg"
-},
-{
-"id": 2,
-"title": "Esempio Profumo 2",
-"producer": "Casa Profumi 2",
-"description": "Descrizione del profumo 2",
-"price": 70.0,
-"fragrances": ["Vaniglia", "Gelsomino"],
-"for_men": False,
-"for_women": True,
-"for_kids": False,
-"image_url": "http://example.com/image2.jpg"
-}
+                    "isbn": "1",
+                    "name": "Esempio Profumo 1",
+                    "brand": "Casa Profumi 1",
+                    "description": "Descrizione del profumo 1",
+                    "price": 50.0,
+                    "fragrances": ["Rosa", "Lavanda"],
+                    "genre": "maschile",
+                    "imageUrl": "http://example.com/image1.jpg"
+                    },
+                    {
+                    "isbn": "2",
+                    "name": "Esempio Profumo 2",
+                    "brand": "Casa Profumi 2",
+                    "description": "Descrizione del profumo 2",
+                    "price": 70.0,
+                    "fragrances": ["Vaniglia", "Gelsomino"],
+                    "genre": "femminile",
+                    "imageUrl": "http://example.com/image2.jpg"
+                    }
 ]
 
 Questa API include le seguenti funzionalità:
@@ -79,16 +75,17 @@ Questa API include le seguenti funzionalità:
 
 Ogni profumo ha i seguenti campi:
 
-- `id`: Identificativo univoco del profumo.
-- `title`: Titolo del profumo.
-- `producer`: Nome della casa produttrice.
-- `description`: Descrizione del profumo.
-- `price`: Prezzo del profumo.
-- `fragrances`: Lista delle fragranze del profumo.
-- `for_men`: Indica se il profumo è per uomini.
-- `for_women`: Indica se il profumo è per donne.
-- `for_kids`: Indica se il profumo è per bambini.
-- `image_url`: URL dell'immagine del profumo.
+- **isbn**: string (Identificativo univoco del profumo)
+- **name**: string (Titolo del profumo)
+- **brand**: string (Marca del profumo)
+- **description**: string (Descrizione del profumo)
+- **price**: number (Prezzo del profumo)
+- **fragrances**: array (Fragranze del profumo)
+- **genre**: string (Genere del profumo: maschile, femminile, bambino)
+- **imageUrl**: string (Immagine del profumo)
 
 PRD Notion
-https://www.notion.so/PRD-Project-Requirements-Document-9237f63cb2b44f2a9eb8de2d2d977f23
+https://abyssinian-hyssop-39b.notion.site/PRD-Project-Requirements-Document-9237f63cb2b44f2a9eb8de2d2d977f23?pvs=4
+
+API Endponts
+https://abyssinian-hyssop-39b.notion.site/7547b3f07b0a4a989b768ba8861e01e5?v=b660236fd88242d0be9265bb450b0cfc&pvs=4

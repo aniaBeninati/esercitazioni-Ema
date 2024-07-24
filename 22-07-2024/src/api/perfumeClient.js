@@ -10,7 +10,7 @@ export const getPerfumeList = () => {
                     "price": 50.0,
                     "fragrances": ["Rosa", "Lavanda"],
                     "genre": "maschile",
-                    "image_url": "http://example.com/image1.jpg"
+                    "imageUrl": "http://example.com/image1.jpg"
                     },
                     {
                     "isbn": "2",
@@ -20,7 +20,7 @@ export const getPerfumeList = () => {
                     "price": 70.0,
                     "fragrances": ["Vaniglia", "Gelsomino"],
                     "genre": "femminile",
-                    "image_url": "http://example.com/image2.jpg"
+                    "imageUrl": "http://example.com/image2.jpg"
                     },
             ]);
         }, 2000);

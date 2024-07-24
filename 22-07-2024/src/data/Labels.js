@@ -1,6 +1,6 @@
 export const labels = {
-    perfumeTableTitle: "Title",
-    perfumeTableProducer: "Producer",
+    perfumeTableName: "Name",
+    perfumeTableBrand: "Brand",
     perfumeTableDescription: "Description",
     perfumeTablePrice: "Price",
     perfumeTableBtnDetail: "Details",
