@@ -44,6 +44,28 @@ export const getPerfumeDetail = (id) => {
     });
 };
 
+export const addPerfume = (perfumeData) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({
+                ...perfumeData,
+                id: crypto.randomUUID(), 
+            });
+        }, 3000);
+    });
+};
+/*export const addPerfume = (perfumeData) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (perfumeData) {
+                console.log("Perfume added:", perfumeData);
+                resolve({ message: "Perfume added successfully" });
+            } else {
+                reject(new Error("Failed to add perfume"));
+            }
+        }, 1000);
+    });
+};*/
 
 /* 
 export const getPerfumeList = async () => {

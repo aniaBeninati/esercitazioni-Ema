@@ -5,8 +5,9 @@ import "./index.css";
 import DefaultLayout from "./layouts/DefaultLayout.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import PerfumeDetailPage from "./pages/PerfumeDetailPage.jsx";
+import PerfumeDetailPage from "./pages/PerfumeDetailPage.jsx"; // Assicurati che il percorso sia corretto
 import ErrorPage from "./pages/ErrorPage.jsx";
+import Create from "./pages/Create.jsx"; // Assicurati di importare il componente Create
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: "perfumes/:id",
                 element: <PerfumeDetailPage />,
+            },
+            {
+                path: "create",
+                element: <Create />, // Aggiungi la rotta per la pagina Create
             },
         ],
     },

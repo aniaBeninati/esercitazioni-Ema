@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { getPerfumeList } from "./api/perfumeClient";
 import { labels } from "./data/Labels";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+    const navigate = useNavigate();
     const [perfumeList, setPerfumeList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [filter, setFilter] = useState("");
@@ -33,10 +35,16 @@ function App() {
         <>
             <div className="flex justify-center">
                 <main className="w-[1200px]">
-                    <div className="p-4">
-                        <h1 className="">{labels.perfumeList}</h1>
+                    <div className="p-4 flex justify-between items-center">
+                        <h1 className="text-2xl font-bold">{labels.perfumeList}</h1>
+                        <button
+                            onClick={() => navigate("/create")}
+                            className="bg-indigo-600 text-white rounded px-4 py-2"
+                        >
+                            Add New Perfume
+                        </button>
                     </div>
-                    <div className="flex gap-2 items-center">
+                    <div className="flex gap-2 items-center mb-4">
                         <h2>{labels.filterPerfumeByName}</h2>
                         <input
                             className="border-slate-400 border-2 p-2"
@@ -68,33 +76,33 @@ function App() {
                             </thead>
                             <tbody className="divide-y divide-gray-200">
                                 {perfumeList
-                                    .filter((perfume) => perfume.name.toLowerCase().includes(filter))
-                                    .map((perfume) => {
-                                        return (
-                                            <tr key={perfume.id}>
-                                                <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                                                    {perfume.name}
-                                                </td>
-                                                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                                                    {perfume.brand}
-                                                </td>
-                                                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                                                    {perfume.description}
-                                                </td>
-                                                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                                                    {perfume.price} €
-                                                </td>
-                                                <td className="whitespace-nowrap px-4 py-2">
-                                                    <Link
-                                                        to={`/perfumes/${perfume.id}`}
-                                                        className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
-                                                    >
-                                                        {labels.perfumeTableBtnDetail}
-                                                    </Link>
-                                                </td>
-                                            </tr>
-                                        );
-                                    })}
+                                    .filter((perfume) =>
+                                        perfume.name.toLowerCase().includes(filter)
+                                    )
+                                    .map((perfume) => (
+                                        <tr key={perfume.id}>
+                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                                                {perfume.name}
+                                            </td>
+                                            <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                                                {perfume.brand}
+                                            </td>
+                                            <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                                                {perfume.description}
+                                            </td>
+                                            <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                                                {perfume.price} €
+                                            </td>
+                                            <td className="whitespace-nowrap px-4 py-2">
+                                                <Link
+                                                    to={`/perfumes/${perfume.id}`}
+                                                    className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
+                                                >
+                                                    {labels.perfumeTableBtnDetail}
+                                                </Link>
+                                            </td>
+                                        </tr>
+                                    ))}
                             </tbody>
                         </table>
                     </div>
