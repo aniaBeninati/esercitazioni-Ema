@@ -1,4 +1,4 @@
-function ErrorComponent({ message }) {
+function ErrorComponents({children,  message }) {
     return (
       <div className="grid h-screen place-content-center bg-white px-4">
         <div className="text-center">
@@ -26,9 +26,10 @@ function ErrorComponent({ message }) {
           </h1>
   
           <p className="mt-4 text-gray-500">{message}</p>
+          {children}
         </div>
       </div>
     );
   }
   
-  export default ErrorComponent;
+  export default ErrorComponents;

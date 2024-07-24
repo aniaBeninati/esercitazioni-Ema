@@ -6,11 +6,13 @@ import DefaultLayout from "./layouts/DefaultLayout.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PerfumeDetailPage from "./pages/PerfumeDetailPage.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <DefaultLayout />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",
