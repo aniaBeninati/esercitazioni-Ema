@@ -19,7 +19,7 @@ function Create() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState({ message: "", isError: false });
 
-  // Validazione dei campi
+  
   const isbnValidation = !form.isbn.length;
   const nameValidation = !form.name.length;
   const brandValidation = !form.brand.length;
@@ -51,11 +51,11 @@ function Create() {
     setIsError({ message: "", isError: false });
 
     try {
-      const res = await addPerfume(form); // Assumendo che questa funzione esista e funzioni
+      const res = await addPerfume(form); 
       setForm(initialState);
       console.log(res);
       alert("Perfume added successfully!");
-      navigate(-1); // Torna alla pagina precedente
+      navigate("/");
     } catch (error) {
       console.log(error);
       setIsError({ message: error.message, isError: true });
