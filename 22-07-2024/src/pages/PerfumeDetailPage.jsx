@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { getPerfumeDetail } from "../api/perfumeClient";
 import { useEffect, useState } from "react";
-import ErrorComponents from "../components/ErrorComponents";
+import { getPerfumeDetail } from "../api/perfumeClient";
+import ErrorComponent from "../components/ErrorComponents"; 
 import { labels } from "../data/Labels";
 
 function PerfumeDetailPage() {
@@ -26,7 +26,7 @@ function PerfumeDetailPage() {
         getPerfume(id);
     }, [id]);
 
-    if (isError.isError) return <ErrorComponents message={isError.message} />;
+    if (isError.isError) return <ErrorComponent message={isError.message} />; 
 
     return (
         <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">

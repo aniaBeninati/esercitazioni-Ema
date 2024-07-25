@@ -11,8 +11,8 @@ export const getPerfumeList = () => {
                     "fragrances": ["Rosa", "Lavanda"],
                     "genre": "maschile",
                     "imageUrl": "http://example.com/image1.jpg"
-                    },
-                    {
+                },
+                {
                     "id": "2",
                     "name": "Esempio Profumo 2",
                     "brand": "Casa Profumi 2",
@@ -21,7 +21,7 @@ export const getPerfumeList = () => {
                     "fragrances": ["Vaniglia", "Gelsomino"],
                     "genre": "femminile",
                     "imageUrl": "http://example.com/image2.jpg"
-                    },
+                },
             ]);
         }, 2000);
     });
@@ -54,28 +54,13 @@ export const addPerfume = (perfumeData) => {
         }, 3000);
     });
 };
-/*export const addPerfume = (perfumeData) => {
-    return new Promise((resolve, reject) => {
+
+export const editPerfume = (perfumeData) => {
+    return new Promise((resolve) => {
         setTimeout(() => {
-            if (perfumeData) {
-                console.log("Perfume added:", perfumeData);
-                resolve({ message: "Perfume added successfully" });
-            } else {
-                reject(new Error("Failed to add perfume"));
-            }
-        }, 1000);
+            resolve({
+                ...perfumeData,
+            });
+        }, 3000);
     });
-};*/
-
-/* 
-export const getPerfumeList = async () => {
-    try {
-        const res = await fetch("https://jsonplaceholder.typicode.com/users");
-        return res.json();
-    } catch (error) {
-        throw new Error("Error:", error);
-    }
-}; 
-*/
-
-
+};

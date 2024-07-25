@@ -19,32 +19,25 @@ function Create() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState({ message: "", isError: false });
 
+ 
+  const formValidation = 
+    !form.id ||
+    !form.name ||
+    !form.brand ||
+    !form.description ||
+    !form.price ||
+    !form.fragrances ||
+    !form.genre ||
+    !form.imageUrl;
+
   
-  const idValidation = !form.id.length;
-  const nameValidation = !form.name.length;
-  const brandValidation = !form.brand.length;
-  const descriptionValidation = !form.description.length;
-  const priceValidation = !form.price.length;
-  const fragrancesValidation = !form.fragrances.length;
-  const genreValidation = !form.genre.length;
-  const imageUrlValidation = !form.imageUrl.length;
-
-  const formValidation =
-    idValidation ||
-    nameValidation ||
-    brandValidation ||
-    descriptionValidation ||
-    priceValidation ||
-    fragrancesValidation ||
-    genreValidation ||
-    imageUrlValidation;
-
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     setForm((prevState) => ({ ...prevState, [name]: value }));
   };
 
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -71,118 +64,109 @@ function Create() {
           <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
             Insert the perfume here
           </h1>
-
           <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
             Inserisci ID, nome, marca, descrizione, prezzo, fragranze, genere, immagine
           </p>
-
           <form
             onSubmit={handleSubmit}
             className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
           >
             <div>
-              <label className="sr-only">ID</label>
-              <div className="relative">
-                <input
-                  name="id"
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter ID"
-                />
-              </div>
+              <label htmlFor="id" className="sr-only">ID</label>
+              <input
+                id="id"
+                name="id"
+                value={form.id}
+                onChange={handleChange}
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter ID"
+              />
             </div>
-
             <div>
-              <label className="sr-only">Name</label>
-              <div className="relative">
-                <input
-                  name="name"
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter name"
-                />
-              </div>
+              <label htmlFor="name" className="sr-only">Name</label>
+              <input
+                id="name"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter name"
+              />
             </div>
-
             <div>
-              <label className="sr-only">Brand</label>
-              <div className="relative">
-                <input
-                  name="brand"
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter brand"
-                />
-              </div>
+              <label htmlFor="brand" className="sr-only">Brand</label>
+              <input
+                id="brand"
+                name="brand"
+                value={form.brand}
+                onChange={handleChange}
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter brand"
+              />
             </div>
-
             <div>
-              <label className="sr-only">Description</label>
-              <div className="relative">
-                <input
-                  name="description"
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter description"
-                />
-              </div>
+              <label htmlFor="description" className="sr-only">Description</label>
+              <input
+                id="description"
+                name="description"
+                value={form.description}
+                onChange={handleChange}
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter description"
+              />
             </div>
-
             <div>
-              <label className="sr-only">Price</label>
-              <div className="relative">
-                <input
-                  name="price"
-                  onChange={handleChange}
-                  type="number"
-                  step="0.01"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter price"
-                />
-              </div>
+              <label htmlFor="price" className="sr-only">Price</label>
+              <input
+                id="price"
+                name="price"
+                value={form.price}
+                onChange={handleChange}
+                type="number"
+                step="0.01"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter price"
+              />
             </div>
-
             <div>
-              <label className="sr-only">Fragrances</label>
-              <div className="relative">
-                <input
-                  name="fragrances"
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter fragrances (comma separated)"
-                />
-              </div>
+              <label htmlFor="fragrances" className="sr-only">Fragrances</label>
+              <input
+                id="fragrances"
+                name="fragrances"
+                value={form.fragrances}
+                onChange={handleChange}
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter fragrances (comma separated)"
+              />
             </div>
-
             <div>
-              <label className="sr-only">Genre</label>
-              <div className="relative">
-                <input
-                  name="genre"
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter genre (e.g., male, female, unisex)"
-                />
-              </div>
+              <label htmlFor="genre" className="sr-only">Genre</label>
+              <input
+                id="genre"
+                name="genre"
+                value={form.genre}
+                onChange={handleChange}
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter genre (e.g., male, female, unisex)"
+              />
             </div>
-
             <div>
-              <label className="sr-only">Image URL</label>
-              <div className="relative">
-                <input
-                  name="imageUrl"
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                  placeholder="Enter image URL"
-                />
-              </div>
+              <label htmlFor="imageUrl" className="sr-only">Image URL</label>
+              <input
+                id="imageUrl"
+                name="imageUrl"
+                value={form.imageUrl}
+                onChange={handleChange}
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Enter image URL"
+              />
             </div>
 
             {isError.isError && (
@@ -197,19 +181,15 @@ function Create() {
               </div>
             )}
 
-            {!isLoading ? (
-              <button
-                disabled={formValidation}
-                type="submit"
-                className={`block w-full rounded-lg bg-indigo-600 ${
-                  formValidation ? "bg-slate-400" : ""
-                } px-5 py-3 text-sm font-medium text-white`}
-              >
-                Submit
-              </button>
-            ) : (
-              <button disabled>Is Loading...</button>
-            )}
+            <button
+              disabled={formValidation || isLoading}
+              type="submit"
+              className={`block w-full rounded-lg bg-indigo-600 ${
+                formValidation || isLoading ? "bg-slate-400" : ""
+              } px-5 py-3 text-sm font-medium text-white`}
+            >
+              {isLoading ? "Loading..." : "Submit"}
+            </button>
           </form>
         </div>
       </div>

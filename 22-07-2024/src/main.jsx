@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PerfumeDetailPage from "./pages/PerfumeDetailPage.jsx"; 
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Create from "./pages/Create.jsx"; 
+import Edit from "./pages/Edit.jsx";
 
 const router = createBrowserRouter([
     {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
                 element: <Create />, 
             },
             {
-                path: "edit:id",
+                path: "edit/:id",
                 element: < Edit/>, 
             },
         ],
