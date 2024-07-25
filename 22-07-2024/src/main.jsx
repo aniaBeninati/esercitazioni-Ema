@@ -1,14 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
+import { initializeApp } from "firebase/app";
+import { firebaseConfig } from "../firebaseconfig.js";
 import "./index.css";
 import DefaultLayout from "./layouts/DefaultLayout.jsx";
-
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import { Protected } from "./pages/Protected";
+import AuthContext from "./context/AuthContext";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import PerfumeDetailPage from "./pages/PerfumeDetailPage.jsx"; 
+import PerfumeDetailPage from "./pages/PerfumeDetailPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
-import Create from "./pages/Create.jsx"; 
+import Create from "./pages/Create.jsx";
 import Edit from "./pages/Edit.jsx";
+
+// Inizializza Firebase
+initializeApp(firebaseConfig);
 
 const router = createBrowserRouter([
     {
@@ -18,7 +26,19 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <App />,
+                element: (
+                    <Protected>
+                        <App />
+                    </Protected>
+                ),
+            },
+            {
+                path: "signin",
+                element: <SignIn />,
+            },
+            {
+                path: "signup",
+                element: <SignUp />,
             },
             {
                 path: "perfumes/:id",
@@ -26,11 +46,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "create",
-                element: <Create />, 
+                element: <Create />,
             },
             {
                 path: "edit/:id",
-                element: < Edit/>, 
+                element: <Edit />,
             },
         ],
     },
@@ -38,6 +58,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <AuthContext>
+            <RouterProvider router={router} />
+        </AuthContext>
     </React.StrictMode>
 );
