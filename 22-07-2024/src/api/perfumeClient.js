@@ -3,7 +3,7 @@ export const getPerfumeList = () => {
         setTimeout(() => {
             resolve([
                 {
-                    "isbn": "1",
+                    "id": "1",
                     "name": "Esempio Profumo 1",
                     "brand": "Casa Profumi 1",
                     "description": "Descrizione del profumo 1",
@@ -13,7 +13,7 @@ export const getPerfumeList = () => {
                     "imageUrl": "http://example.com/image1.jpg"
                     },
                     {
-                    "isbn": "2",
+                    "id": "2",
                     "name": "Esempio Profumo 2",
                     "brand": "Casa Profumi 2",
                     "description": "Descrizione del profumo 2",
@@ -31,7 +31,7 @@ export const getPerfumeDetail = (id) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve({
-                isbn: "1",
+                id: "1",
                 name: "Esempio Profumo 1",
                 brand: "Casa Profumi 1",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",

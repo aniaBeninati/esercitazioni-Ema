@@ -1,26 +1,23 @@
-import { useState } from "react";
-import { addPerfume } from "../api/perfumeClient"; 
-import { useNavigate } from "react-router-dom";
+import {useState} from "react"
 
-const initialState = {
-  id: "",
-  name: "",
-  brand: "",
-  description: "",
-  price: "",
-  fragrances: "",
-  genre: "",
-  imageUrl: "",
-};
 
-function Create() {
-  const navigate = useNavigate();
-  const [form, setForm] = useState(initialState);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState({ message: "", isError: false });
+function PerfumeForm({value, onSubmit}){
+    const initialState = {
+        name:value?.name || "",
+        id:value?.id || "",
+        brand:value?.brand || "",
+        description:value?.description || "",
+        price:value?.price || "",
+        fragrances:value?.fragrances || "",
+        genre:value?.genre || "",
+        imageUrl:value?.mageUrl || "",
+        
+    }
+    
+    const [form, setForm]= useState (initialState);
+    const [isLoading, setIsLoading] = useState (false);
 
-  
-  const idValidation = !form.id.length;
+    const idValidation = !form.id.length;
   const nameValidation = !form.name.length;
   const brandValidation = !form.brand.length;
   const descriptionValidation = !form.description.length;
@@ -39,44 +36,15 @@ function Create() {
     genreValidation ||
     imageUrlValidation;
 
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setForm((prevState) => ({ ...prevState, [name]: value }));
-  };
+    const handleChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setForm((prevState) => ({ ...prevState, [name]: value }));
+      };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setIsError({ message: "", isError: false });
 
-    try {
-      const res = await addPerfume(form); 
-      setForm(initialState);
-      console.log(res);
-      alert("Perfume added successfully!");
-      navigate("/");
-    } catch (error) {
-      console.log(error);
-      setIsError({ message: error.message, isError: true });
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  return (
-    <div>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-lg">
-          <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
-            Insert the perfume here
-          </h1>
-
-          <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
-            Inserisci ID, nome, marca, descrizione, prezzo, fragranze, genere, immagine
-          </p>
-
-          <form
+      return (
+    <form
             onSubmit={handleSubmit}
             className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
           >
@@ -211,10 +179,9 @@ function Create() {
               <button disabled>Is Loading...</button>
             )}
           </form>
-        </div>
-      </div>
-    </div>
-  );
+
+    return <div>PerfumeForm</div>
 }
 
-export default Create;
+
+export default PerfumeForm;
