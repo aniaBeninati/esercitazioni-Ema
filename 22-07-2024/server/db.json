@@ -2,19 +2,6 @@
   "totalCount": 60,
   "perfumes": [
     {
-      "id": "1",
-      "name": "Chanel No. 5",
-      "brand": "Chanel",
-      "price": 100,
-      "fragrances": [
-        "Aldehydes",
-        "Ylang-Ylang",
-        "Jasmine",
-        "Rose",
-        "Sandalwood"
-      ]
-    },
-    {
       "id": "2",
       "name": "Dior Sauvage",
       "brand": "Dior",
@@ -755,25 +742,23 @@
       "brand": "rfrf",
       "price": "0.09",
       "fragrances": "rr"
+    },
+    {
+      "id": "9204ee36-9928-47fa-afa3-96f0a3e3bc67",
+      "name": "gd",
+      "brand": "fdfdfdsffds",
+      "price": "0.01",
+      "fragrances": "sdffddf"
+    },
+    {
+      "id": "da21dc21-1928-4e91-ad1d-0201746b2a69",
+      "name": "ania",
+      "brand": "ck",
+      "price": "0.01",
+      "fragrances": "aaaaaa"
     }
   ],
   "perfume-details": [
-    {
-      "id": "1",
-      "name": "Chanel No. 5",
-      "brand": "Chanel",
-      "description": "A timeless fragrance with a blend of floral and aldehydic notes.",
-      "price": 100,
-      "fragrances": [
-        "Aldehydes",
-        "Ylang-Ylang",
-        "Jasmine",
-        "Rose",
-        "Sandalwood"
-      ],
-      "genre": "femminile",
-      "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw0a5abbb6/images/hi-res/SKU/SKU_4/337229_swatch.jpg?sw=585&sh=585&sm=fit"
-    },
     {
       "id": "2",
       "name": "Dior Sauvage",
@@ -1074,7 +1059,8 @@
         "Cedar"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/leau_dissey.jpg"
+      "imageUrl": "https://example.com/leau_dissey.jpg",
+      "id": "1771"
     },
     {
       "id ": "22",
@@ -1090,7 +1076,8 @@
         "Cedar"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/terre_dhermes.jpg"
+      "imageUrl": "https://example.com/terre_dhermes.jpg",
+      "id": "82a1"
     },
     {
       "id ": "23",
@@ -1106,7 +1093,8 @@
         "Magnolia"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/chloe.jpg"
+      "imageUrl": "https://example.com/chloe.jpg",
+      "id": "af7c"
     },
     {
       "id ": "24",
@@ -1122,7 +1110,8 @@
         "Oakmoss"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/aventus.jpg"
+      "imageUrl": "https://example.com/aventus.jpg",
+      "id": "2705"
     },
     {
       "id ": "25",
@@ -1137,7 +1126,8 @@
         "Benzoin"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/prada_candy.jpg"
+      "imageUrl": "https://example.com/prada_candy.jpg",
+      "id": "f3f3"
     },
     {
       "id ": "26",
@@ -1153,7 +1143,8 @@
         "Tonka Bean"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/allure_homme_sport.jpg"
+      "imageUrl": "https://example.com/allure_homme_sport.jpg",
+      "id": "ccf0"
     },
     {
       "id ": "27",
@@ -1168,7 +1159,8 @@
         "Ambergris"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/olympea.jpg"
+      "imageUrl": "https://example.com/olympea.jpg",
+      "id": "bc0e"
     },
     {
       "id ": "28",
@@ -1184,7 +1176,8 @@
         "Violet"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/euphoria.jpg"
+      "imageUrl": "https://example.com/euphoria.jpg",
+      "id": "a35f"
     },
     {
       "id ": "29",
@@ -1200,7 +1193,8 @@
         "Tonka Bean"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/azzaro_wanted.jpg"
+      "imageUrl": "https://example.com/azzaro_wanted.jpg",
+      "id": "6df5"
     },
     {
       "id ": "30",
@@ -1215,7 +1209,8 @@
         "Amber"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/linstant_de_guerlain.jpg"
+      "imageUrl": "https://example.com/linstant_de_guerlain.jpg",
+      "id": "1d47"
     },
     {
       "id ": "31",
@@ -1230,7 +1225,8 @@
         "Balsa Wood"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/omnia_crystalline.jpg"
+      "imageUrl": "https://example.com/omnia_crystalline.jpg",
+      "id": "d583"
     },
     {
       "id ": "32",
@@ -1246,7 +1242,8 @@
         "Musk"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/versace_pour_homme.jpg"
+      "imageUrl": "https://example.com/versace_pour_homme.jpg",
+      "id": "1fb0"
     },
     {
       "id ": "33",
@@ -1261,7 +1258,8 @@
         "Narcissus"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/dolce.jpg"
+      "imageUrl": "https://example.com/dolce.jpg",
+      "id": "a7ec"
     },
     {
       "id ": "34",
@@ -1277,7 +1275,8 @@
         "Tobacco"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/cool_water.jpg"
+      "imageUrl": "https://example.com/cool_water.jpg",
+      "id": "0dbe"
     },
     {
       "id ": "35",
@@ -1293,7 +1292,8 @@
         "Amber"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/pure_poison.jpg"
+      "imageUrl": "https://example.com/pure_poison.jpg",
+      "id": "0d4c"
     },
     {
       "id ": "36",
@@ -1309,7 +1309,8 @@
         "Vetiver"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/lhomme.jpg"
+      "imageUrl": "https://example.com/lhomme.jpg",
+      "id": "5433"
     },
     {
       "id ": "37",
@@ -1324,7 +1325,8 @@
         "White Musk"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/flower_by_kenzo.jpg"
+      "imageUrl": "https://example.com/flower_by_kenzo.jpg",
+      "id": "8386"
     },
     {
       "id ": "38",
@@ -1340,7 +1342,8 @@
         "Vetiver"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/spicebomb.jpg"
+      "imageUrl": "https://example.com/spicebomb.jpg",
+      "id": "5faa"
     },
     {
       "id ": "39",
@@ -1356,7 +1359,8 @@
         "Patchouli"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/linterdit.jpg"
+      "imageUrl": "https://example.com/linterdit.jpg",
+      "id": "5305"
     },
     {
       "id ": "40",
@@ -1372,7 +1376,8 @@
         "Musk"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/212_men.jpg"
+      "imageUrl": "https://example.com/212_men.jpg",
+      "id": "aec4"
     },
     {
       "id ": "41",
@@ -1388,7 +1393,8 @@
         "Vetiver"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/eau_sauvage.jpg"
+      "imageUrl": "https://example.com/eau_sauvage.jpg",
+      "id": "5a8e"
     },
     {
       "id ": "42",
@@ -1403,7 +1409,8 @@
         "Vetiver"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/la_nuit_de_lhomme.jpg"
+      "imageUrl": "https://example.com/la_nuit_de_lhomme.jpg",
+      "id": "41dc"
     },
     {
       "id ": "43",
@@ -1417,7 +1424,8 @@
         "Jasmine Bud"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/gucci_bloom.jpg"
+      "imageUrl": "https://example.com/gucci_bloom.jpg",
+      "id": "24c6"
     },
     {
       "id ": "44",
@@ -1433,7 +1441,8 @@
         "Musk"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/light_blue_pour_homme.jpg"
+      "imageUrl": "https://example.com/light_blue_pour_homme.jpg",
+      "id": "8db2"
     },
     {
       "id ": "45",
@@ -1448,7 +1457,8 @@
         "Iris"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/lair_du_temps.jpg"
+      "imageUrl": "https://example.com/lair_du_temps.jpg",
+      "id": "42bf"
     },
     {
       "id ": "46",
@@ -1464,7 +1474,8 @@
         "Basil"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/hugo.jpg"
+      "imageUrl": "https://example.com/hugo.jpg",
+      "id": "77a7"
     },
     {
       "id ": "47",
@@ -1480,7 +1491,8 @@
         "Patchouli"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/mon_paris.jpg"
+      "imageUrl": "https://example.com/mon_paris.jpg",
+      "id": "6838"
     },
     {
       "id ": "48",
@@ -1496,7 +1508,8 @@
         "Musk"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/polo_blue.jpg"
+      "imageUrl": "https://example.com/polo_blue.jpg",
+      "id": "71de"
     },
     {
       "id ": "49",
@@ -1511,7 +1524,8 @@
         "Musk"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/limperatrice.jpg"
+      "imageUrl": "https://example.com/limperatrice.jpg",
+      "id": "11fa"
     },
     {
       "id ": "50",
@@ -1527,7 +1541,8 @@
         "Rose"
       ],
       "genre": "unisex",
-      "imageUrl": "https://example.com/acqua_di_parma_colonia.jpg"
+      "imageUrl": "https://example.com/acqua_di_parma_colonia.jpg",
+      "id": "8baf"
     },
     {
       "id ": "51",
@@ -1542,7 +1557,8 @@
         "Vetiver"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/nuit_dissey.jpg"
+      "imageUrl": "https://example.com/nuit_dissey.jpg",
+      "id": "7c39"
     },
     {
       "id ": "52",
@@ -1558,7 +1574,8 @@
         "Musk"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/amor_amor.jpg"
+      "imageUrl": "https://example.com/amor_amor.jpg",
+      "id": "5e9d"
     },
     {
       "id ": "53",
@@ -1573,7 +1590,8 @@
         "Ambergris"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/invictus_aqua.jpg"
+      "imageUrl": "https://example.com/invictus_aqua.jpg",
+      "id": "ccd6"
     },
     {
       "id ": "54",
@@ -1589,7 +1607,8 @@
         "Tonka Bean"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/la_petite_robe_noire.jpg"
+      "imageUrl": "https://example.com/la_petite_robe_noire.jpg",
+      "id": "e304"
     },
     {
       "id ": "55",
@@ -1605,7 +1624,8 @@
         "Guaiac Wood"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/armani_code.jpg"
+      "imageUrl": "https://example.com/armani_code.jpg",
+      "id": "13fe"
     },
     {
       "id ": "56",
@@ -1620,7 +1640,8 @@
         "Musk"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/joy.jpg"
+      "imageUrl": "https://example.com/joy.jpg",
+      "id": "4a13"
     },
     {
       "id ": "57",
@@ -1636,7 +1657,8 @@
         "Amber"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/dior_homme.jpg"
+      "imageUrl": "https://example.com/dior_homme.jpg",
+      "id": "0719"
     },
     {
       "id ": "58",
@@ -1652,7 +1674,8 @@
         "Cedar"
       ],
       "genre": "femminile",
-      "imageUrl": "https://example.com/black_opium.jpg"
+      "imageUrl": "https://example.com/black_opium.jpg",
+      "id": "d204"
     },
     {
       "id ": "59",
@@ -1668,7 +1691,8 @@
         "Honey"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/1_million_lucky.jpg"
+      "imageUrl": "https://example.com/1_million_lucky.jpg",
+      "id": "844b"
     },
     {
       "id ": "60",
@@ -1684,7 +1708,8 @@
         "Ambergris"
       ],
       "genre": "maschile",
-      "imageUrl": "https://example.com/luna_rossa.jpg"
+      "imageUrl": "https://example.com/luna_rossa.jpg",
+      "id": "3a16"
     }
   ]
 }

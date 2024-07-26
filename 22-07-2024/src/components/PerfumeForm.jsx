@@ -3,7 +3,6 @@ import { useState } from "react";
 function PerfumeForm({ value, onSubmit }) {
   const initialState = {
     name: value?.name || "",
-    id: value?.id || "",
     brand: value?.brand || "",
     description: value?.description || "",
     price: value?.price || "",
@@ -17,7 +16,6 @@ function PerfumeForm({ value, onSubmit }) {
   const [isError, setIsError] = useState({ message: "", isError: false });
 
   const formValidation =
-    !form.id ||
     !form.name ||
     !form.brand ||
     !form.description ||
@@ -48,18 +46,6 @@ function PerfumeForm({ value, onSubmit }) {
         }}
         className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
       >
-        <div>
-          <label className="sr-only">ID</label>
-          <input
-            name="id"
-            value={form.id}
-            onChange={handleChange}
-            type="text"
-            className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-            placeholder="Enter ID"
-          />
-        </div>
-
         <div>
           <label className="sr-only">Name</label>
           <input
