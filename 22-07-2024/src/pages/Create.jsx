@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addPerfume } from "../api/perfumeClient";
 import { useNavigate } from "react-router-dom";
-import PerfumeForm from "../components/PerfumeForm"; 
+import PerfumeForm from "../components/PerfumeForm";
 import { labels } from "../data/labels";
 import { toast } from "react-toastify";
 
@@ -40,7 +40,8 @@ function Create() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
-            Inserisci nome, marca, descrizione, prezzo, fragranze, genere, immagine
+            Inserisci nome, marca, descrizione, prezzo, fragranze, genere,
+            immagine
           </p>
 
           <PerfumeForm onSubmit={handleCreate} />
