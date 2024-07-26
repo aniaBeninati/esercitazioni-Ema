@@ -17,10 +17,10 @@ import Edit from "./pages/Edit.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// Inizializza Firebase
+
 initializeApp(firebaseConfig);
 
-// Configura il router
+
 const router = createBrowserRouter([
     {
         path: "/",

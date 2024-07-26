@@ -1,6 +1,5 @@
-const baseUrl = "http://localhost:3000"; // Assumendo che il server JSON sia in esecuzione sulla porta 3000
+const baseUrl = "http://localhost:3000"; 
 
-// Ottieni l'elenco dei profumi
 export const getPerfumeList = async () => {
     try {
         const res = await fetch(`${baseUrl}/perfumes`);
@@ -13,7 +12,7 @@ export const getPerfumeList = async () => {
     }
 };
 
-// Ottieni i dettagli di un profumo specifico
+
 export const getPerfumeDetail = async (id) => {
     try {
         const res = await fetch(`${baseUrl}/perfume-details/${id}`);
@@ -26,7 +25,7 @@ export const getPerfumeDetail = async (id) => {
     }
 };
 
-// Aggiungi un nuovo profumo
+
 export const addPerfume = async (perfumeData) => {
     const id = crypto.randomUUID();
     const perfumeNoDetail = {
@@ -64,7 +63,6 @@ export const addPerfume = async (perfumeData) => {
     }
 };
 
-// Modifica un profumo esistente
 export const editPerfume = async (perfumeData) => {
     try {
         const res = await fetch(`${baseUrl}/perfume-details/${perfumeData.id}`, {
@@ -85,7 +83,7 @@ export const editPerfume = async (perfumeData) => {
     }
 };
 
-// Elimina un profumo
+
 export const deletePerfume = async (id) => {
     try {
         await fetch(`${baseUrl}/perfumes/${id}`, {
