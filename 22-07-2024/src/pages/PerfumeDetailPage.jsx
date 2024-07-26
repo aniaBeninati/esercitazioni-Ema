@@ -90,6 +90,7 @@ function PerfumeDetailPage() {
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   {perfume.description}
+                  
                 </p>
               </div>
             </div>
@@ -101,7 +102,7 @@ function PerfumeDetailPage() {
           ) : (
             <img
               alt={perfume.name}
-              src={perfume.image_url}
+              src={perfume.imageUrl}
               className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
             />
           )}

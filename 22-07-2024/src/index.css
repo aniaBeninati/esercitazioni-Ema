@@ -4,16 +4,48 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
-    @apply font-bold;
+    @apply text-3xl font-bold text-gray-900;
   }
   h2 {
-    @apply text-xl;
+    @apply text-xl font-semibold text-gray-700;
   }
 }
 
-
 body {
-  background: url('https://media.istockphoto.com/id/1399637805/it/foto/vista-dallalto-posa-piatta-di-una-serie-di-bottiglie-di-profumo-su-uno-sfondo-bianco-beige.webp?b=1&s=170667a&w=0&k=20&c=acJZOYWa5tjSz4U-isDucgpU3HdUOXq5dHXyvjTBLsk=') no-repeat center center fixed;
+  background: url('https://images.pexels.com/photos/14893032/pexels-photo-14893032.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center fixed;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  @apply rounded-lg font-medium text-white shadow-sm transition-colors duration-300;
+}
+
+input {
+  @apply rounded-lg border border-gray-300 p-3 text-sm shadow-sm focus:ring-2 focus:ring-indigo-500;
+}
+
+a {
+  @apply text-indigo-600 hover:text-indigo-700 transition-colors duration-300;
+}
+
+table {
+  @apply w-full text-sm bg-white shadow-md rounded-lg overflow-hidden;
+}
+
+th, td {
+  @apply px-6 py-4 text-left;
+}
+
+th {
+  @apply bg-gray-100 text-gray-900 font-semibold;
+}
+
+tbody tr:nth-child(odd) {
+  @apply bg-gray-50;
+}
+
+tbody tr:hover {
+  @apply bg-gray-200;
 }
