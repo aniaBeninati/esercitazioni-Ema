@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addPerfume } from "../api/perfumeClient";
 import { useNavigate } from "react-router-dom";
-import PerfumeForm from "../components/PerfumeForm"; // Assumendo che tu abbia un componente PerfumeForm simile a BookForm
+import PerfumeForm from "../components/PerfumeForm"; 
 import { labels } from "../data/labels";
 import { toast } from "react-toastify";
 

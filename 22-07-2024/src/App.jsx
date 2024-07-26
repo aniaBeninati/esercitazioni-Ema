@@ -43,7 +43,7 @@ function App() {
             toast.success(`${res.name} eliminato con successo!`, {
                 position: "top-right",
             });
-            getPerfumes(); // Update list after delete
+            getPerfumes(); 
         } catch (error) {
             toast.error(`Errore: ${error.message}`, {
                 position: "top-right",

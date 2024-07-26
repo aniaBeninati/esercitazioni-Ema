@@ -10,7 +10,7 @@ const NavBar = () => {
     return (
         <nav className="flex items-center justify-between py-2 px-4 bg-slate-300">
             <NavLink to={"/"}>
-                <h1 className="font-bold">{labels.perfumeList}</h1> {/* Titolo aggiornato */}
+                <h1 className="font-bold">{labels.perfumeList}</h1> 
             </NavLink>
             <ul className="flex gap-4">
                 {menuList.map((item, index) => (
