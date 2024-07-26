@@ -5,7 +5,7 @@
       "id": "1",
       "name": "Chanel No. 5",
       "brand": "Chanel",
-      "price": 100.0,
+      "price": 100,
       "fragrances": [
         "Aldehydes",
         "Ylang-Ylang",
@@ -19,42 +19,74 @@
       "name": "Dior Sauvage",
       "brand": "Dior",
       "price": 85,
-      "fragrances": ["Bergamot", "Pepper", "Lavender", "Vetiver", "Patchouli"]
+      "fragrances": [
+        "Bergamot",
+        "Pepper",
+        "Lavender",
+        "Vetiver",
+        "Patchouli"
+      ]
     },
     {
       "id": "3",
       "name": "Acqua di Giò",
       "brand": "Giorgio Armani",
       "price": 75,
-      "fragrances": ["Jasmine", "Rosemary", "Marine notes", "Cedarwood"]
+      "fragrances": [
+        "Jasmine",
+        "Rosemary",
+        "Marine notes",
+        "Cedarwood"
+      ]
     },
     {
       "id": "4",
       "name": "Coco Mademoiselle",
       "brand": "Chanel",
       "price": 120,
-      "fragrances": ["Orange", "Jasmine", "Rose", "Patchouli", "Vanilla"]
+      "fragrances": [
+        "Orange",
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Vanilla"
+      ]
     },
     {
       "id": "5",
       "name": "Bleu de Chanel",
       "brand": "Chanel",
       "price": 95,
-      "fragrances": ["Citrus", "Vetiver", "Cedar", "Sandalwood"]
+      "fragrances": [
+        "Citrus",
+        "Vetiver",
+        "Cedar",
+        "Sandalwood"
+      ]
     },
     {
       "id": "6",
       "name": "La Vie Est Belle",
       "brand": "Lancôme",
       "price": 110,
-      "fragrances": ["Iris", "Patchouli", "Gourmand"]
+      "fragrances": [
+        "Iris",
+        "Patchouli",
+        "Gourmand"
+      ]
     },
     {
       "id": "7",
       "name": "Light Blue",
       "brand": "Dolce & Gabbana",
       "price": 85,
-      "fragrances": ["Apple", "Cedar", "Bluebell", "Bamboo", "Jasmine"]
+      "fragrances": [
+        "Apple",
+        "Cedar",
+        "Bluebell",
+        "Bamboo",
+        "Jasmine"
+      ]
     },
     {
       "id": "8",
@@ -74,7 +106,11 @@
       "name": "J'adore",
       "brand": "Dior",
       "price": 130,
-      "fragrances": ["Ylang-Ylang", "Damascus Rose", "Jasmine"]
+      "fragrances": [
+        "Ylang-Ylang",
+        "Damascus Rose",
+        "Jasmine"
+      ]
     },
     {
       "id": "10",
@@ -94,91 +130,157 @@
       "name": "Le Male",
       "brand": "Jean Paul Gaultier",
       "price": 80,
-      "fragrances": ["Lavender", "Mint", "Vanilla", "Cardamom"]
+      "fragrances": [
+        "Lavender",
+        "Mint",
+        "Vanilla",
+        "Cardamom"
+      ]
     },
     {
       "id": "12",
       "name": "Good Girl",
       "brand": "Carolina Herrera",
       "price": 115,
-      "fragrances": ["Almond", "Cocoa", "Jasmine", "Tonka Bean"]
+      "fragrances": [
+        "Almond",
+        "Cocoa",
+        "Jasmine",
+        "Tonka Bean"
+      ]
     },
     {
       "id": "13",
       "name": "The One",
       "brand": "Dolce & Gabbana",
       "price": 105,
-      "fragrances": ["Bergamot", "Peach", "Vanilla", "Musk"]
+      "fragrances": [
+        "Bergamot",
+        "Peach",
+        "Vanilla",
+        "Musk"
+      ]
     },
     {
       "id": "14",
       "name": "Eros",
       "brand": "Versace",
       "price": 95,
-      "fragrances": ["Mint", "Green Apple", "Vanilla", "Oakmoss"]
+      "fragrances": [
+        "Mint",
+        "Green Apple",
+        "Vanilla",
+        "Oakmoss"
+      ]
     },
     {
       "id": "15",
       "name": "Flowerbomb",
       "brand": "Viktor & Rolf",
       "price": 130,
-      "fragrances": ["Jasmine", "Orange Tree", "Patchouli", "Rose", "Vanilla"]
+      "fragrances": [
+        "Jasmine",
+        "Orange Tree",
+        "Patchouli",
+        "Rose",
+        "Vanilla"
+      ]
     },
     {
       "id": "16",
       "name": "Invictus",
       "brand": "Paco Rabanne",
       "price": 85,
-      "fragrances": ["Grapefruit", "Marine Accord", "Bay Leaf", "Ambergris"]
+      "fragrances": [
+        "Grapefruit",
+        "Marine Accord",
+        "Bay Leaf",
+        "Ambergris"
+      ]
     },
     {
       "id": "17",
       "name": "Alien",
       "brand": "Thierry Mugler",
       "price": 125,
-      "fragrances": ["Jasmine", "Cashmere Wood", "Amber"]
+      "fragrances": [
+        "Jasmine",
+        "Cashmere Wood",
+        "Amber"
+      ]
     },
     {
       "id": "18",
       "name": "Gucci Guilty",
       "brand": "Gucci",
       "price": 95,
-      "fragrances": ["Mandarin", "Pink Pepper", "Lilac", "Patchouli"]
+      "fragrances": [
+        "Mandarin",
+        "Pink Pepper",
+        "Lilac",
+        "Patchouli"
+      ]
     },
     {
       "id": "19",
       "name": "Bvlgari Man in Black",
       "brand": "Bvlgari",
       "price": 110,
-      "fragrances": ["Rum", "Leather", "Amber", "Spices"]
+      "fragrances": [
+        "Rum",
+        "Leather",
+        "Amber",
+        "Spices"
+      ]
     },
     {
       "id": "20",
       "name": "Si",
       "brand": "Giorgio Armani",
       "price": 115,
-      "fragrances": ["Cassis", "Rose", "Vanilla"]
+      "fragrances": [
+        "Cassis",
+        "Rose",
+        "Vanilla"
+      ]
     },
     {
       "id": "21",
       "name": "L'Eau d'Issey",
       "brand": "Issey Miyake",
       "price": 85,
-      "fragrances": ["Lotus", "Freesia", "Cyclamen", "Cedar"]
+      "fragrances": [
+        "Lotus",
+        "Freesia",
+        "Cyclamen",
+        "Cedar"
+      ]
     },
     {
       "id": "22",
       "name": "Terre d'Hermès",
       "brand": "Hermès",
       "price": 120,
-      "fragrances": ["Grapefruit", "Orange", "Pepper", "Vetiver", "Cedar"]
+      "fragrances": [
+        "Grapefruit",
+        "Orange",
+        "Pepper",
+        "Vetiver",
+        "Cedar"
+      ]
     },
     {
       "id": "23",
       "name": "Chloé Eau de Parfum",
       "brand": "Chloé",
       "price": 105,
-      "fragrances": ["Peony", "Lychee", "Freesia", "Rose", "Magnolia"]
+      "fragrances": [
+        "Peony",
+        "Lychee",
+        "Freesia",
+        "Rose",
+        "Magnolia"
+      ]
     },
     {
       "id": "24",
@@ -198,21 +300,37 @@
       "name": "Prada Candy",
       "brand": "Prada",
       "price": 95,
-      "fragrances": ["Caramel", "Vanilla", "Musk", "Benzoin"]
+      "fragrances": [
+        "Caramel",
+        "Vanilla",
+        "Musk",
+        "Benzoin"
+      ]
     },
     {
       "id": "26",
       "name": "Allure Homme Sport",
       "brand": "Chanel",
       "price": 110,
-      "fragrances": ["Orange", "Aldehydes", "Pepper", "Cedar", "Tonka Bean"]
+      "fragrances": [
+        "Orange",
+        "Aldehydes",
+        "Pepper",
+        "Cedar",
+        "Tonka Bean"
+      ]
     },
     {
       "id": "27",
       "name": "Olympea",
       "brand": "Paco Rabanne",
       "price": 90,
-      "fragrances": ["Green Mandarin", "Vanilla", "Salted Vanilla", "Ambergris"]
+      "fragrances": [
+        "Green Mandarin",
+        "Vanilla",
+        "Salted Vanilla",
+        "Ambergris"
+      ]
     },
     {
       "id": "28",
@@ -232,42 +350,75 @@
       "name": "Azzaro Wanted",
       "brand": "Azzaro",
       "price": 75,
-      "fragrances": ["Lemon", "Ginger", "Cardamom", "Vetiver", "Tonka Bean"]
+      "fragrances": [
+        "Lemon",
+        "Ginger",
+        "Cardamom",
+        "Vetiver",
+        "Tonka Bean"
+      ]
     },
     {
       "id": "30",
       "name": "L'Instant de Guerlain",
       "brand": "Guerlain",
       "price": 125,
-      "fragrances": ["Citrus", "Magnolia", "Honey", "Amber"]
+      "fragrances": [
+        "Citrus",
+        "Magnolia",
+        "Honey",
+        "Amber"
+      ]
     },
     {
       "id": "31",
       "name": "Omnia Crystalline",
       "brand": "Bvlgari",
       "price": 80,
-      "fragrances": ["Bamboo", "Nashi Pear", "Lotus", "Balsa Wood"]
+      "fragrances": [
+        "Bamboo",
+        "Nashi Pear",
+        "Lotus",
+        "Balsa Wood"
+      ]
     },
     {
       "id": "32",
       "name": "Pour Homme",
       "brand": "Versace",
       "price": 70,
-      "fragrances": ["Lemon", "Bergamot", "Neroli", "Geranium", "Musk"]
+      "fragrances": [
+        "Lemon",
+        "Bergamot",
+        "Neroli",
+        "Geranium",
+        "Musk"
+      ]
     },
     {
       "id": "33",
       "name": "Dolce",
       "brand": "Dolce & Gabbana",
       "price": 85,
-      "fragrances": ["Neroli", "Papaya Flower", "White Amaryllis", "Narcissus"]
+      "fragrances": [
+        "Neroli",
+        "Papaya Flower",
+        "White Amaryllis",
+        "Narcissus"
+      ]
     },
     {
       "id": "34",
       "name": "Cool Water",
       "brand": "Davidoff",
       "price": 65,
-      "fragrances": ["Mint", "Sea Water", "Lavender", "Sandalwood", "Tobacco"]
+      "fragrances": [
+        "Mint",
+        "Sea Water",
+        "Lavender",
+        "Sandalwood",
+        "Tobacco"
+      ]
     },
     {
       "id": "35",
@@ -287,21 +438,38 @@
       "name": "L'Homme",
       "brand": "Yves Saint Laurent",
       "price": 100,
-      "fragrances": ["Ginger", "Bergamot", "Lemon", "Violet Leaf", "Vetiver"]
+      "fragrances": [
+        "Ginger",
+        "Bergamot",
+        "Lemon",
+        "Violet Leaf",
+        "Vetiver"
+      ]
     },
     {
       "id": "37",
       "name": "Flower by Kenzo",
       "brand": "Kenzo",
       "price": 110,
-      "fragrances": ["Bulgarian Rose", "Parma Violet", "Vanilla", "White Musk"]
+      "fragrances": [
+        "Bulgarian Rose",
+        "Parma Violet",
+        "Vanilla",
+        "White Musk"
+      ]
     },
     {
       "id": "38",
       "name": "Spicebomb",
       "brand": "Viktor & Rolf",
       "price": 95,
-      "fragrances": ["Chili", "Saffron", "Leather", "Tobacco", "Vetiver"]
+      "fragrances": [
+        "Chili",
+        "Saffron",
+        "Leather",
+        "Tobacco",
+        "Vetiver"
+      ]
     },
     {
       "id": "39",
@@ -334,98 +502,175 @@
       "name": "Eau Sauvage",
       "brand": "Dior",
       "price": 95,
-      "fragrances": ["Lemon", "Rosemary", "Basil", "Cumin", "Vetiver"]
+      "fragrances": [
+        "Lemon",
+        "Rosemary",
+        "Basil",
+        "Cumin",
+        "Vetiver"
+      ]
     },
     {
       "id": "42",
       "name": "La Nuit de L'Homme",
       "brand": "Yves Saint Laurent",
       "price": 105,
-      "fragrances": ["Cardamom", "Lavender", "Cedar", "Vetiver"]
+      "fragrances": [
+        "Cardamom",
+        "Lavender",
+        "Cedar",
+        "Vetiver"
+      ]
     },
     {
       "id": "43",
       "name": "Gucci Bloom",
       "brand": "Gucci",
       "price": 120,
-      "fragrances": ["Rangoon Creeper", "Tuberose", "Jasmine Bud"]
+      "fragrances": [
+        "Rangoon Creeper",
+        "Tuberose",
+        "Jasmine Bud"
+      ]
     },
     {
       "id": "44",
       "name": "Light Blue Pour Homme",
       "brand": "Dolce & Gabbana",
       "price": 85,
-      "fragrances": ["Grapefruit", "Bergamot", "Pepper", "Rosemary", "Musk"]
+      "fragrances": [
+        "Grapefruit",
+        "Bergamot",
+        "Pepper",
+        "Rosemary",
+        "Musk"
+      ]
     },
     {
       "id": "45",
       "name": "L'Air du Temps",
       "brand": "Nina Ricci",
       "price": 75,
-      "fragrances": ["Carnation", "Gardenia", "Rose", "Iris"]
+      "fragrances": [
+        "Carnation",
+        "Gardenia",
+        "Rose",
+        "Iris"
+      ]
     },
     {
       "id": "46",
       "name": "Hugo",
       "brand": "Hugo Boss",
       "price": 70,
-      "fragrances": ["Green Apple", "Mint", "Lavender", "Pine", "Basil"]
+      "fragrances": [
+        "Green Apple",
+        "Mint",
+        "Lavender",
+        "Pine",
+        "Basil"
+      ]
     },
     {
       "id": "47",
       "name": "Mon Paris",
       "brand": "Yves Saint Laurent",
       "price": 115,
-      "fragrances": ["Strawberry", "Raspberry", "Pear", "Peony", "Patchouli"]
+      "fragrances": [
+        "Strawberry",
+        "Raspberry",
+        "Pear",
+        "Peony",
+        "Patchouli"
+      ]
     },
     {
       "id": "48",
       "name": "Polo Blue",
       "brand": "Ralph Lauren",
       "price": 90,
-      "fragrances": ["Melon", "Cucumber", "Basil", "Sage", "Musk"]
+      "fragrances": [
+        "Melon",
+        "Cucumber",
+        "Basil",
+        "Sage",
+        "Musk"
+      ]
     },
     {
       "id": "49",
       "name": "L'Imperatrice",
       "brand": "Dolce & Gabbana",
       "price": 85,
-      "fragrances": ["Watermelon", "Kiwi", "Pink Cyclamen", "Musk"]
+      "fragrances": [
+        "Watermelon",
+        "Kiwi",
+        "Pink Cyclamen",
+        "Musk"
+      ]
     },
     {
       "id": "50",
       "name": "Acqua di Parma Colonia",
       "brand": "Acqua di Parma",
       "price": 150,
-      "fragrances": ["Lemon", "Bergamot", "Lavender", "Rosemary", "Rose"]
+      "fragrances": [
+        "Lemon",
+        "Bergamot",
+        "Lavender",
+        "Rosemary",
+        "Rose"
+      ]
     },
     {
       "id": "51",
       "name": "Nuit d'Issey",
       "brand": "Issey Miyake",
       "price": 95,
-      "fragrances": ["Leather", "Woods", "Black Pepper", "Vetiver"]
+      "fragrances": [
+        "Leather",
+        "Woods",
+        "Black Pepper",
+        "Vetiver"
+      ]
     },
     {
       "id": "52",
       "name": "Amor Amor",
       "brand": "Cacharel",
       "price": 65,
-      "fragrances": ["Black Currant", "Mandarin", "Jasmine", "Vanilla", "Musk"]
+      "fragrances": [
+        "Black Currant",
+        "Mandarin",
+        "Jasmine",
+        "Vanilla",
+        "Musk"
+      ]
     },
     {
       "id": "53",
       "name": "Invictus Aqua",
       "brand": "Paco Rabanne",
       "price": 85,
-      "fragrances": ["Grapefruit", "Marine Accord", "Violet Leaf", "Ambergris"]
+      "fragrances": [
+        "Grapefruit",
+        "Marine Accord",
+        "Violet Leaf",
+        "Ambergris"
+      ]
     },
     {
       "id": "54",
       "name": "La Petite Robe Noire",
       "brand": "Guerlain",
       "price": 120,
-      "fragrances": ["Black Cherry", "Almond", "Rose", "Tea", "Tonka Bean"]
+      "fragrances": [
+        "Black Cherry",
+        "Almond",
+        "Rose",
+        "Tea",
+        "Tonka Bean"
+      ]
     },
     {
       "id": "55",
@@ -445,28 +690,51 @@
       "name": "Joy",
       "brand": "Jean Patou",
       "price": 160,
-      "fragrances": ["Jasmine", "Rose", "Ylang-Ylang", "Musk"]
+      "fragrances": [
+        "Jasmine",
+        "Rose",
+        "Ylang-Ylang",
+        "Musk"
+      ]
     },
     {
       "id": "57",
       "name": "Homme",
       "brand": "Dior",
       "price": 115,
-      "fragrances": ["Iris", "Vetiver", "Cedar", "Lavender", "Amber"]
+      "fragrances": [
+        "Iris",
+        "Vetiver",
+        "Cedar",
+        "Lavender",
+        "Amber"
+      ]
     },
     {
       "id": "58",
       "name": "Black Opium",
       "brand": "Yves Saint Laurent",
       "price": 130,
-      "fragrances": ["Coffee", "Vanilla", "White Flowers", "Jasmine", "Cedar"]
+      "fragrances": [
+        "Coffee",
+        "Vanilla",
+        "White Flowers",
+        "Jasmine",
+        "Cedar"
+      ]
     },
     {
       "id": "59",
       "name": "1 Million Lucky",
       "brand": "Paco Rabanne",
       "price": 95,
-      "fragrances": ["Hazelnut", "Green Plum", "Grapefruit", "Cedar", "Honey"]
+      "fragrances": [
+        "Hazelnut",
+        "Green Plum",
+        "Grapefruit",
+        "Cedar",
+        "Honey"
+      ]
     },
     {
       "id": "60",
@@ -480,28 +748,8 @@
         "Mint",
         "Ambergris"
       ]
-    },
-    {
-      "id": "d47cfe53-e41a-44cf-a622-c6153d7d5516",
-      "name": "Stefania Beninati",
-      "brand": "rfrf",
-      "price": "0.09",
-      "fragrances": "rr"
-    },
-    {
-      "id": "9204ee36-9928-47fa-afa3-96f0a3e3bc67",
-      "name": "gd",
-      "brand": "fdfdfdsffds",
-      "price": "0.01",
-      "fragrances": "sdffddf"
-    },
-    {
-      "id": "da21dc21-1928-4e91-ad1d-0201746b2a69",
-      "name": "ania",
-      "brand": "ck",
-      "price": "0.01",
-      "fragrances": "aaaaaa"
     }
+  
   ],
   "perfume-details": [
     {
@@ -509,7 +757,7 @@
       "name": "Chanel No. 5",
       "brand": "Chanel",
       "description": "A timeless fragrance with a blend of floral and aldehydic notes.",
-      "price": 100.0,
+      "price": 100,
       "fragrances": [
         "Aldehydes",
         "Ylang-Ylang",
@@ -526,7 +774,13 @@
       "brand": "Dior",
       "description": "A fresh and bold scent with notes of bergamot and pepper.",
       "price": 85,
-      "fragrances": ["Bergamot", "Pepper", "Lavender", "Vetiver", "Patchouli"],
+      "fragrances": [
+        "Bergamot",
+        "Pepper",
+        "Lavender",
+        "Vetiver",
+        "Patchouli"
+      ],
       "genre": "maschile",
       "imageUrl": "https://www.sephora.it/p/sauvage-elixir---parfum-da-uomo----note-agrumate%2C-speziate-e-legnose-P10017596.html"
     },
@@ -536,7 +790,12 @@
       "brand": "Giorgio Armani",
       "description": "An aquatic fragrance with notes of jasmine and rosemary.",
       "price": 75,
-      "fragrances": ["Jasmine", "Rosemary", "Marine notes", "Cedarwood"],
+      "fragrances": [
+        "Jasmine",
+        "Rosemary",
+        "Marine notes",
+        "Cedarwood"
+      ],
       "genre": "maschile",
       "imageUrl": "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwefdf91dd/images/hi-res/SKU/SKU_1/202463_swatch.jpg"
     },
@@ -546,7 +805,13 @@
       "brand": "Chanel",
       "description": "A modern fragrance with a strong personality, yet surprisingly fresh.",
       "price": 120,
-      "fragrances": ["Orange", "Jasmine", "Rose", "Patchouli", "Vanilla"],
+      "fragrances": [
+        "Orange",
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Vanilla"
+      ],
       "genre": "femminile",
       "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwb7650ff9/images/hi-res/SKU/SKU_666/467347_swatch.jpg?sw=585&sh=585&sm=fit"
     },
@@ -556,7 +821,12 @@
       "brand": "Chanel",
       "description": "A sophisticated and contemporary scent with a blend of citrus and woods.",
       "price": 95,
-      "fragrances": ["Citrus", "Vetiver", "Cedar", "Sandalwood"],
+      "fragrances": [
+        "Citrus",
+        "Vetiver",
+        "Cedar",
+        "Sandalwood"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/bleu_de_chanel.jpg"
     },
@@ -566,7 +836,11 @@
       "brand": "Lancôme",
       "description": "A floral gourmand fragrance that embodies happiness and femininity.",
       "price": 110,
-      "fragrances": ["Iris", "Patchouli", "Gourmand"],
+      "fragrances": [
+        "Iris",
+        "Patchouli",
+        "Gourmand"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/la_vie_est_belle.jpg"
     },
@@ -576,7 +850,13 @@
       "brand": "Dolce & Gabbana",
       "description": "A fresh and fruity scent that evokes the spirit of a Sicilian summer.",
       "price": 85,
-      "fragrances": ["Apple", "Cedar", "Bluebell", "Bamboo", "Jasmine"],
+      "fragrances": [
+        "Apple",
+        "Cedar",
+        "Bluebell",
+        "Bamboo",
+        "Jasmine"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/light_blue.jpg"
     },
@@ -602,7 +882,11 @@
       "brand": "Dior",
       "description": "A bouquet of floral notes with a touch of sweetness and freshness.",
       "price": 130,
-      "fragrances": ["Ylang-Ylang", "Damascus Rose", "Jasmine"],
+      "fragrances": [
+        "Ylang-Ylang",
+        "Damascus Rose",
+        "Jasmine"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/jadore.jpg"
     },
@@ -628,7 +912,12 @@
       "brand": "Jean Paul Gaultier",
       "description": "A strong and masculine fragrance with notes of lavender and vanilla.",
       "price": 80,
-      "fragrances": ["Lavender", "Mint", "Vanilla", "Cardamom"],
+      "fragrances": [
+        "Lavender",
+        "Mint",
+        "Vanilla",
+        "Cardamom"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/le_male.jpg"
     },
@@ -638,7 +927,12 @@
       "brand": "Carolina Herrera",
       "description": "A bold and daring scent with a mix of bright and dark notes.",
       "price": 115,
-      "fragrances": ["Almond", "Cocoa", "Jasmine", "Tonka Bean"],
+      "fragrances": [
+        "Almond",
+        "Cocoa",
+        "Jasmine",
+        "Tonka Bean"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/good_girl.jpg"
     },
@@ -648,7 +942,12 @@
       "brand": "Dolce & Gabbana",
       "description": "A warm and elegant fragrance with a blend of oriental and floral notes.",
       "price": 105,
-      "fragrances": ["Bergamot", "Peach", "Vanilla", "Musk"],
+      "fragrances": [
+        "Bergamot",
+        "Peach",
+        "Vanilla",
+        "Musk"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/the_one.jpg"
     },
@@ -658,7 +957,12 @@
       "brand": "Versace",
       "description": "A bold and masculine scent with a blend of mint, vanilla, and oakmoss.",
       "price": 95,
-      "fragrances": ["Mint", "Green Apple", "Vanilla", "Oakmoss"],
+      "fragrances": [
+        "Mint",
+        "Green Apple",
+        "Vanilla",
+        "Oakmoss"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/eros.jpg"
     },
@@ -668,7 +972,13 @@
       "brand": "Viktor & Rolf",
       "description": "A floral explosion with a blend of sambac jasmine, orange tree, and patchouli.",
       "price": 130,
-      "fragrances": ["Jasmine", "Orange Tree", "Patchouli", "Rose", "Vanilla"],
+      "fragrances": [
+        "Jasmine",
+        "Orange Tree",
+        "Patchouli",
+        "Rose",
+        "Vanilla"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/flowerbomb.jpg"
     },
@@ -678,7 +988,12 @@
       "brand": "Paco Rabanne",
       "description": "A fresh and sporty fragrance with notes of marine accord and grapefruit.",
       "price": 85,
-      "fragrances": ["Grapefruit", "Marine Accord", "Bay Leaf", "Ambergris"],
+      "fragrances": [
+        "Grapefruit",
+        "Marine Accord",
+        "Bay Leaf",
+        "Ambergris"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/invictus.jpg"
     },
@@ -688,7 +1003,11 @@
       "brand": "Thierry Mugler",
       "description": "A mysterious and enchanting scent with warm, woody, and amber notes.",
       "price": 125,
-      "fragrances": ["Jasmine", "Cashmere Wood", "Amber"],
+      "fragrances": [
+        "Jasmine",
+        "Cashmere Wood",
+        "Amber"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/alien.jpg"
     },
@@ -698,7 +1017,12 @@
       "brand": "Gucci",
       "description": "A modern and sophisticated fragrance with a blend of spicy and floral notes.",
       "price": 95,
-      "fragrances": ["Mandarin", "Pink Pepper", "Lilac", "Patchouli"],
+      "fragrances": [
+        "Mandarin",
+        "Pink Pepper",
+        "Lilac",
+        "Patchouli"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/gucci_guilty.jpg"
     },
@@ -708,7 +1032,12 @@
       "brand": "Bvlgari",
       "description": "A charismatic and intense scent with notes of amber, rum, and leather.",
       "price": 110,
-      "fragrances": ["Rum", "Leather", "Amber", "Spices"],
+      "fragrances": [
+        "Rum",
+        "Leather",
+        "Amber",
+        "Spices"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/bvlgari_man_in_black.jpg"
     },
@@ -718,7 +1047,11 @@
       "brand": "Giorgio Armani",
       "description": "A graceful and intense fragrance with notes of cassis, rose, and vanilla.",
       "price": 115,
-      "fragrances": ["Cassis", "Rose", "Vanilla"],
+      "fragrances": [
+        "Cassis",
+        "Rose",
+        "Vanilla"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/si.jpg"
     },
@@ -728,7 +1061,12 @@
       "brand": "Issey Miyake",
       "description": "A fresh and aquatic scent with floral and woody notes.",
       "price": 85,
-      "fragrances": ["Lotus", "Freesia", "Cyclamen", "Cedar"],
+      "fragrances": [
+        "Lotus",
+        "Freesia",
+        "Cyclamen",
+        "Cedar"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/leau_dissey.jpg"
     },
@@ -738,7 +1076,13 @@
       "brand": "Hermès",
       "description": "A woody and earthy fragrance with a blend of citrus and mineral notes.",
       "price": 120,
-      "fragrances": ["Grapefruit", "Orange", "Pepper", "Vetiver", "Cedar"],
+      "fragrances": [
+        "Grapefruit",
+        "Orange",
+        "Pepper",
+        "Vetiver",
+        "Cedar"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/terre_dhermes.jpg"
     },
@@ -748,7 +1092,13 @@
       "brand": "Chloé",
       "description": "A fresh and elegant scent with floral and powdery notes.",
       "price": 105,
-      "fragrances": ["Peony", "Lychee", "Freesia", "Rose", "Magnolia"],
+      "fragrances": [
+        "Peony",
+        "Lychee",
+        "Freesia",
+        "Rose",
+        "Magnolia"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/chloe.jpg"
     },
@@ -774,7 +1124,12 @@
       "brand": "Prada",
       "description": "A sweet and playful scent with caramel and vanilla notes.",
       "price": 95,
-      "fragrances": ["Caramel", "Vanilla", "Musk", "Benzoin"],
+      "fragrances": [
+        "Caramel",
+        "Vanilla",
+        "Musk",
+        "Benzoin"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/prada_candy.jpg"
     },
@@ -784,7 +1139,13 @@
       "brand": "Chanel",
       "description": "A fresh and energizing fragrance with aquatic and spicy notes.",
       "price": 110,
-      "fragrances": ["Orange", "Aldehydes", "Pepper", "Cedar", "Tonka Bean"],
+      "fragrances": [
+        "Orange",
+        "Aldehydes",
+        "Pepper",
+        "Cedar",
+        "Tonka Bean"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/allure_homme_sport.jpg"
     },
@@ -825,7 +1186,13 @@
       "brand": "Azzaro",
       "description": "A bold and irresistible scent with spicy and woody notes.",
       "price": 75,
-      "fragrances": ["Lemon", "Ginger", "Cardamom", "Vetiver", "Tonka Bean"],
+      "fragrances": [
+        "Lemon",
+        "Ginger",
+        "Cardamom",
+        "Vetiver",
+        "Tonka Bean"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/azzaro_wanted.jpg"
     },
@@ -835,7 +1202,12 @@
       "brand": "Guerlain",
       "description": "A delicate and elegant fragrance with citrus and honey notes.",
       "price": 125,
-      "fragrances": ["Citrus", "Magnolia", "Honey", "Amber"],
+      "fragrances": [
+        "Citrus",
+        "Magnolia",
+        "Honey",
+        "Amber"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/linstant_de_guerlain.jpg"
     },
@@ -845,7 +1217,12 @@
       "brand": "Bvlgari",
       "description": "A fresh and sparkling fragrance with floral and woody notes.",
       "price": 80,
-      "fragrances": ["Bamboo", "Nashi Pear", "Lotus", "Balsa Wood"],
+      "fragrances": [
+        "Bamboo",
+        "Nashi Pear",
+        "Lotus",
+        "Balsa Wood"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/omnia_crystalline.jpg"
     },
@@ -855,7 +1232,13 @@
       "brand": "Versace",
       "description": "A classic and elegant scent with citrus and woody notes.",
       "price": 70,
-      "fragrances": ["Lemon", "Bergamot", "Neroli", "Geranium", "Musk"],
+      "fragrances": [
+        "Lemon",
+        "Bergamot",
+        "Neroli",
+        "Geranium",
+        "Musk"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/versace_pour_homme.jpg"
     },
@@ -865,7 +1248,12 @@
       "brand": "Dolce & Gabbana",
       "description": "A soft and feminine fragrance with white floral notes.",
       "price": 85,
-      "fragrances": ["Neroli", "Papaya Flower", "White Amaryllis", "Narcissus"],
+      "fragrances": [
+        "Neroli",
+        "Papaya Flower",
+        "White Amaryllis",
+        "Narcissus"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/dolce.jpg"
     },
@@ -875,7 +1263,13 @@
       "brand": "Davidoff",
       "description": "A refreshing and aquatic fragrance with notes of mint and ocean air.",
       "price": 65,
-      "fragrances": ["Mint", "Sea Water", "Lavender", "Sandalwood", "Tobacco"],
+      "fragrances": [
+        "Mint",
+        "Sea Water",
+        "Lavender",
+        "Sandalwood",
+        "Tobacco"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/cool_water.jpg"
     },
@@ -901,7 +1295,13 @@
       "brand": "Yves Saint Laurent",
       "description": "A woody and floral fragrance with fresh citrus and ginger notes.",
       "price": 100,
-      "fragrances": ["Ginger", "Bergamot", "Lemon", "Violet Leaf", "Vetiver"],
+      "fragrances": [
+        "Ginger",
+        "Bergamot",
+        "Lemon",
+        "Violet Leaf",
+        "Vetiver"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/lhomme.jpg"
     },
@@ -911,7 +1311,12 @@
       "brand": "Kenzo",
       "description": "A poetic and floral fragrance with powdery and vanilla notes.",
       "price": 110,
-      "fragrances": ["Bulgarian Rose", "Parma Violet", "Vanilla", "White Musk"],
+      "fragrances": [
+        "Bulgarian Rose",
+        "Parma Violet",
+        "Vanilla",
+        "White Musk"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/flower_by_kenzo.jpg"
     },
@@ -921,7 +1326,13 @@
       "brand": "Viktor & Rolf",
       "description": "An explosive and spicy scent with a blend of chili, saffron, and leather.",
       "price": 95,
-      "fragrances": ["Chili", "Saffron", "Leather", "Tobacco", "Vetiver"],
+      "fragrances": [
+        "Chili",
+        "Saffron",
+        "Leather",
+        "Tobacco",
+        "Vetiver"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/spicebomb.jpg"
     },
@@ -963,7 +1374,13 @@
       "brand": "Dior",
       "description": "A classic citrus fragrance with herbal and spicy undertones.",
       "price": 95,
-      "fragrances": ["Lemon", "Rosemary", "Basil", "Cumin", "Vetiver"],
+      "fragrances": [
+        "Lemon",
+        "Rosemary",
+        "Basil",
+        "Cumin",
+        "Vetiver"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/eau_sauvage.jpg"
     },
@@ -973,7 +1390,12 @@
       "brand": "Yves Saint Laurent",
       "description": "A dark and seductive fragrance with spicy and woody notes.",
       "price": 105,
-      "fragrances": ["Cardamom", "Lavender", "Cedar", "Vetiver"],
+      "fragrances": [
+        "Cardamom",
+        "Lavender",
+        "Cedar",
+        "Vetiver"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/la_nuit_de_lhomme.jpg"
     },
@@ -983,7 +1405,11 @@
       "brand": "Gucci",
       "description": "A rich white floral fragrance that captures the essence of a blooming garden.",
       "price": 120,
-      "fragrances": ["Rangoon Creeper", "Tuberose", "Jasmine Bud"],
+      "fragrances": [
+        "Rangoon Creeper",
+        "Tuberose",
+        "Jasmine Bud"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/gucci_bloom.jpg"
     },
@@ -993,7 +1419,13 @@
       "brand": "Dolce & Gabbana",
       "description": "A fresh and invigorating scent with citrus and spicy notes.",
       "price": 85,
-      "fragrances": ["Grapefruit", "Bergamot", "Pepper", "Rosemary", "Musk"],
+      "fragrances": [
+        "Grapefruit",
+        "Bergamot",
+        "Pepper",
+        "Rosemary",
+        "Musk"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/light_blue_pour_homme.jpg"
     },
@@ -1003,7 +1435,12 @@
       "brand": "Nina Ricci",
       "description": "A timeless floral fragrance with notes of carnation and gardenia.",
       "price": 75,
-      "fragrances": ["Carnation", "Gardenia", "Rose", "Iris"],
+      "fragrances": [
+        "Carnation",
+        "Gardenia",
+        "Rose",
+        "Iris"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/lair_du_temps.jpg"
     },
@@ -1013,7 +1450,13 @@
       "brand": "Hugo Boss",
       "description": "A fresh and aromatic fragrance with green and aquatic notes.",
       "price": 70,
-      "fragrances": ["Green Apple", "Mint", "Lavender", "Pine", "Basil"],
+      "fragrances": [
+        "Green Apple",
+        "Mint",
+        "Lavender",
+        "Pine",
+        "Basil"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/hugo.jpg"
     },
@@ -1023,7 +1466,13 @@
       "brand": "Yves Saint Laurent",
       "description": "A captivating and intense fragrance with notes of red berries and white flowers.",
       "price": 115,
-      "fragrances": ["Strawberry", "Raspberry", "Pear", "Peony", "Patchouli"],
+      "fragrances": [
+        "Strawberry",
+        "Raspberry",
+        "Pear",
+        "Peony",
+        "Patchouli"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/mon_paris.jpg"
     },
@@ -1033,7 +1482,13 @@
       "brand": "Ralph Lauren",
       "description": "A fresh and aquatic fragrance with a blend of melon, cucumber, and basil.",
       "price": 90,
-      "fragrances": ["Melon", "Cucumber", "Basil", "Sage", "Musk"],
+      "fragrances": [
+        "Melon",
+        "Cucumber",
+        "Basil",
+        "Sage",
+        "Musk"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/polo_blue.jpg"
     },
@@ -1043,7 +1498,12 @@
       "brand": "Dolce & Gabbana",
       "description": "A vibrant and fruity fragrance with notes of watermelon and kiwi.",
       "price": 85,
-      "fragrances": ["Watermelon", "Kiwi", "Pink Cyclamen", "Musk"],
+      "fragrances": [
+        "Watermelon",
+        "Kiwi",
+        "Pink Cyclamen",
+        "Musk"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/limperatrice.jpg"
     },
@@ -1053,7 +1513,13 @@
       "brand": "Acqua di Parma",
       "description": "A classic citrus fragrance with a blend of lavender, rosemary, and rose.",
       "price": 150,
-      "fragrances": ["Lemon", "Bergamot", "Lavender", "Rosemary", "Rose"],
+      "fragrances": [
+        "Lemon",
+        "Bergamot",
+        "Lavender",
+        "Rosemary",
+        "Rose"
+      ],
       "genre": "unisex",
       "imageUrl": "https://example.com/acqua_di_parma_colonia.jpg"
     },
@@ -1063,7 +1529,12 @@
       "brand": "Issey Miyake",
       "description": "A mysterious and masculine fragrance with notes of leather and woods.",
       "price": 95,
-      "fragrances": ["Leather", "Woods", "Black Pepper", "Vetiver"],
+      "fragrances": [
+        "Leather",
+        "Woods",
+        "Black Pepper",
+        "Vetiver"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/nuit_dissey.jpg"
     },
@@ -1073,7 +1544,13 @@
       "brand": "Cacharel",
       "description": "A fruity and floral fragrance with a touch of vanilla and musk.",
       "price": 65,
-      "fragrances": ["Black Currant", "Mandarin", "Jasmine", "Vanilla", "Musk"],
+      "fragrances": [
+        "Black Currant",
+        "Mandarin",
+        "Jasmine",
+        "Vanilla",
+        "Musk"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/amor_amor.jpg"
     },
@@ -1083,7 +1560,12 @@
       "brand": "Paco Rabanne",
       "description": "A fresh and aquatic fragrance with marine and citrus notes.",
       "price": 85,
-      "fragrances": ["Grapefruit", "Marine Accord", "Violet Leaf", "Ambergris"],
+      "fragrances": [
+        "Grapefruit",
+        "Marine Accord",
+        "Violet Leaf",
+        "Ambergris"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/invictus_aqua.jpg"
     },
@@ -1093,7 +1575,13 @@
       "brand": "Guerlain",
       "description": "A playful and sophisticated fragrance with notes of black cherry and rose.",
       "price": 120,
-      "fragrances": ["Black Cherry", "Almond", "Rose", "Tea", "Tonka Bean"],
+      "fragrances": [
+        "Black Cherry",
+        "Almond",
+        "Rose",
+        "Tea",
+        "Tonka Bean"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/la_petite_robe_noire.jpg"
     },
@@ -1119,7 +1607,12 @@
       "brand": "Jean Patou",
       "description": "A rich and luxurious floral fragrance with a bouquet of jasmine and rose.",
       "price": 160,
-      "fragrances": ["Jasmine", "Rose", "Ylang-Ylang", "Musk"],
+      "fragrances": [
+        "Jasmine",
+        "Rose",
+        "Ylang-Ylang",
+        "Musk"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/joy.jpg"
     },
@@ -1129,7 +1622,13 @@
       "brand": "Dior",
       "description": "A woody and floral fragrance with a blend of iris, vetiver, and cedar.",
       "price": 115,
-      "fragrances": ["Iris", "Vetiver", "Cedar", "Lavender", "Amber"],
+      "fragrances": [
+        "Iris",
+        "Vetiver",
+        "Cedar",
+        "Lavender",
+        "Amber"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/dior_homme.jpg"
     },
@@ -1139,7 +1638,13 @@
       "brand": "Yves Saint Laurent",
       "description": "A warm and spicy fragrance with a blend of coffee, vanilla, and white flowers.",
       "price": 130,
-      "fragrances": ["Coffee", "Vanilla", "White Flowers", "Jasmine", "Cedar"],
+      "fragrances": [
+        "Coffee",
+        "Vanilla",
+        "White Flowers",
+        "Jasmine",
+        "Cedar"
+      ],
       "genre": "femminile",
       "imageUrl": "https://example.com/black_opium.jpg"
     },
@@ -1149,7 +1654,13 @@
       "brand": "Paco Rabanne",
       "description": "A fresh and vibrant fragrance with notes of hazelnut, honey, and cedar.",
       "price": 95,
-      "fragrances": ["Hazelnut", "Green Plum", "Grapefruit", "Cedar", "Honey"],
+      "fragrances": [
+        "Hazelnut",
+        "Green Plum",
+        "Grapefruit",
+        "Cedar",
+        "Honey"
+      ],
       "genre": "maschile",
       "imageUrl": "https://example.com/1_million_lucky.jpg"
     },
