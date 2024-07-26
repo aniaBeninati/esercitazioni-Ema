@@ -90,6 +90,7 @@ function PerfumeDetailPage() {
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   {perfume.description}
+                  
                 </p>
               </div>
             </div>

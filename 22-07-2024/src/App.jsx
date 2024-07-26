@@ -112,7 +112,7 @@ function App() {
                     {labels.perfumeTableBrand}
                   </th>
                   <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.perfumeTableDescription}
+                    {labels.perfumeTableFragrances}
                   </th>
                   <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                     {labels.perfumeTablePrice}
@@ -136,7 +136,7 @@ function App() {
                             {perfume.brand}
                           </td>
                           <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                            {perfume.description}
+                          {perfume.fragrances.join(', ')}
                           </td>
                           <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                             {perfume.price} €

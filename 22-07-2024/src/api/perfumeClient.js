@@ -1,4 +1,113 @@
-export const getPerfumeList = () => {
+const baseUrl = "http://localhost:3000"; // Assumendo che il server JSON sia in esecuzione sulla porta 3000
+
+// Ottieni l'elenco dei profumi
+export const getPerfumeList = async () => {
+    try {
+        const res = await fetch(`${baseUrl}/perfumes`);
+        if (!res.ok) {
+            throw new Error('Errore nel recupero della lista dei profumi');
+        }
+        return res.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
+};
+
+// Ottieni i dettagli di un profumo specifico
+export const getPerfumeDetail = async (id) => {
+    try {
+        const res = await fetch(`${baseUrl}/perfume-details/${id}`);
+        if (!res.ok) {
+            throw new Error(`Errore nel recupero dei dettagli del profumo con ID: ${id}`);
+        }
+        return res.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
+};
+
+// Aggiungi un nuovo profumo
+export const addPerfume = async (perfumeData) => {
+    const id = crypto.randomUUID();
+    const perfumeNoDetail = {
+        id,
+        name: perfumeData.name,
+        brand: perfumeData.brand,
+        price: perfumeData.price,
+        fragrances: perfumeData.fragrances
+    };
+
+    try {
+        await fetch(`${baseUrl}/perfumes`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(perfumeNoDetail)
+        });
+
+        const res = await fetch(`${baseUrl}/perfume-details`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ id, ...perfumeData })
+        });
+
+        if (!res.ok) {
+            throw new Error('Errore nell\'aggiunta del profumo');
+        }
+
+        return res.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
+};
+
+// Modifica un profumo esistente
+export const editPerfume = async (perfumeData) => {
+    try {
+        const res = await fetch(`${baseUrl}/perfume-details/${perfumeData.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(perfumeData)
+        });
+
+        if (!res.ok) {
+            throw new Error('Errore nella modifica del profumo');
+        }
+
+        return res.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
+};
+
+// Elimina un profumo
+export const deletePerfume = async (id) => {
+    try {
+        await fetch(`${baseUrl}/perfumes/${id}`, {
+            method: "DELETE"
+        });
+
+        const res = await fetch(`${baseUrl}/perfume-details/${id}`, {
+            method: "DELETE"
+        });
+
+        if (!res.ok) {
+            throw new Error(`Errore nella cancellazione del profumo con ID: ${id}`);
+        }
+
+        return res.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
+};
+
+
+/*export const getPerfumeList = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve([
@@ -72,3 +181,4 @@ export const deletePerfume = (id) => {
         }, 3000);
     });
 };
+*/
