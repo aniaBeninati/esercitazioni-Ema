@@ -79,7 +79,9 @@ function App() {
       <div className="flex justify-center bg-gray-100 min-h-screen">
         <main className="w-full max-w-6xl p-6 bg-white shadow-lg rounded-lg">
           <div className="flex justify-between items-center mb-6">
-            <h1 className="text-3xl font-bold text-gray-900">{labels.perfumeList}</h1>
+            <h1 className="text-3xl font-bold text-gray-900">
+              {labels.perfumeList}
+            </h1>
             <button
               onClick={() => navigate("/create")}
               className="bg-indigo-600 text-white rounded px-4 py-2 hover:bg-indigo-700"
@@ -87,11 +89,16 @@ function App() {
               Add New Perfume
             </button>
           </div>
-          <button onClick={handleSignOut} className="bg-red-500 text-white rounded px-4 py-2 mb-4 hover:bg-red-600">
+          <button
+            onClick={handleSignOut}
+            className="bg-red-500 text-white rounded px-4 py-2 mb-4 hover:bg-red-600"
+          >
             Sign Out
           </button>
           <div className="flex gap-2 items-center mb-4">
-            <h2 className="text-lg font-semibold text-gray-700">{labels.filterPerfumeByName}</h2>
+            <h2 className="text-lg font-semibold text-gray-700">
+              {labels.filterPerfumeByName}
+            </h2>
             <input
               className="border-gray-300 border rounded-lg p-2"
               type="text"
@@ -105,10 +112,18 @@ function App() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead>
                 <tr>
-                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTableName}</th>
-                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTableBrand}</th>
-                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTableFragrances}</th>
-                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTablePrice}</th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">
+                    {labels.perfumeTableName}
+                  </th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">
+                    {labels.perfumeTableBrand}
+                  </th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">
+                    {labels.perfumeTableFragrances}
+                  </th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">
+                    {labels.perfumeTablePrice}
+                  </th>
                   <th className="px-6 py-3"></th>
                 </tr>
               </thead>
@@ -121,10 +136,20 @@ function App() {
                       )
                       .map((perfume) => (
                         <tr key={perfume.id}>
-                          <td className="px-6 py-4 font-medium text-gray-900">{perfume.name}</td>
-                          <td className="px-6 py-4 text-gray-700">{perfume.brand}</td>
-                          <td className="px-6 py-4 text-gray-700">{perfume.fragrances}</td>
-                          <td className="px-6 py-4 text-gray-700">{perfume.price} €</td>
+                          <td className="px-6 py-4 font-medium text-gray-900">
+                            {perfume.name}
+                          </td>
+                          <td className="px-6 py-4 text-gray-700">
+                            {perfume.brand}
+                          </td>
+                          <td className="px-6 py-4 text-gray-700">
+                            {Array.isArray(perfume.fragrances)
+                              ? perfume.fragrances.join(", ")
+                              : perfume.fragrances}
+                          </td>
+                          <td className="px-6 py-4 text-gray-700">
+                            {perfume.price} €
+                          </td>
                           <td className="px-6 py-4 flex gap-2">
                             <Link
                               to={`/perfumes/${perfume.id}`}
