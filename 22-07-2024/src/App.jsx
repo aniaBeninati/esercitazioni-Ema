@@ -76,24 +76,24 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center">
-        <main className="w-[1200px]">
-          <div className="p-4 flex justify-between items-center">
-            <h1 className="text-2xl font-bold">{labels.perfumeList}</h1>
+      <div className="flex justify-center bg-gray-100 min-h-screen">
+        <main className="w-full max-w-6xl p-6 bg-white shadow-lg rounded-lg">
+          <div className="flex justify-between items-center mb-6">
+            <h1 className="text-3xl font-bold text-gray-900">{labels.perfumeList}</h1>
             <button
               onClick={() => navigate("/create")}
-              className="bg-indigo-600 text-white rounded px-4 py-2"
+              className="bg-indigo-600 text-white rounded px-4 py-2 hover:bg-indigo-700"
             >
               Add New Perfume
             </button>
           </div>
-          <button onClick={handleSignOut} className="bg-red-500 p-2">
+          <button onClick={handleSignOut} className="bg-red-500 text-white rounded px-4 py-2 mb-4 hover:bg-red-600">
             Sign Out
           </button>
           <div className="flex gap-2 items-center mb-4">
-            <h2>{labels.filterPerfumeByName}</h2>
+            <h2 className="text-lg font-semibold text-gray-700">{labels.filterPerfumeByName}</h2>
             <input
-              className="border-slate-400 border-2 p-2"
+              className="border-gray-300 border rounded-lg p-2"
               type="text"
               value={filter}
               placeholder={labels.insertPerfumeName}
@@ -102,25 +102,17 @@ function App() {
           </div>
 
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-              <thead className="text-left">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead>
                 <tr>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.perfumeTableName}
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.perfumeTableBrand}
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.perfumeTableFragrances}
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.perfumeTablePrice}
-                  </th>
-                  <th className="px-4 py-2"></th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTableName}</th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTableBrand}</th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTableFragrances}</th>
+                  <th className="px-6 py-3 text-left text-gray-900 font-semibold">{labels.perfumeTablePrice}</th>
+                  <th className="px-6 py-3"></th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody>
                 {isLoading
                   ? renderSkeletons()
                   : perfumeList
@@ -129,19 +121,11 @@ function App() {
                       )
                       .map((perfume) => (
                         <tr key={perfume.id}>
-                          <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                            {perfume.name}
-                          </td>
-                          <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                            {perfume.brand}
-                          </td>
-                          <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                          {perfume.fragrances.join(', ')}
-                          </td>
-                          <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                            {perfume.price} €
-                          </td>
-                          <td className="whitespace-nowrap flex gap-2 px-4 py-2">
+                          <td className="px-6 py-4 font-medium text-gray-900">{perfume.name}</td>
+                          <td className="px-6 py-4 text-gray-700">{perfume.brand}</td>
+                          <td className="px-6 py-4 text-gray-700">{perfume.fragrances.join(', ')}</td>
+                          <td className="px-6 py-4 text-gray-700">{perfume.price} €</td>
+                          <td className="px-6 py-4 flex gap-2">
                             <Link
                               to={`/perfumes/${perfume.id}`}
                               className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"

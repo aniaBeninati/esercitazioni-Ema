@@ -102,7 +102,7 @@ function PerfumeDetailPage() {
           ) : (
             <img
               alt={perfume.name}
-              src={perfume.image_url}
+              src={perfume.imageUrl}
               className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
             />
           )}

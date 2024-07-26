@@ -54,28 +54,17 @@ function Edit() {
   if (isLoading) return <p>Loading...</p>;
 
   return (
-    <div>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-lg">
-          <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
-            Edit the perfume here
-          </h1>
-          <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
-            Inserisci ID, nome, marca, descrizione, prezzo, fragranze, genere, immagine
-          </p>
-          <PerfumeForm value={perfume} onSubmit={handleEdit} />
-          {isError.isError && (
-            <div
-              role="alert"
-              className="rounded border-s-4 border-red-500 bg-red-50 p-4"
-            >
-              <strong className="block font-medium text-red-800">
-                Something went wrong
-              </strong>
-              <p className="mt-2 text-sm text-red-700">{isError.message}</p>
-            </div>
-          )}
-        </div>
+    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg">
+        <h1 className="text-3xl font-bold text-indigo-600 text-center">Edit the perfume here</h1>
+        <p className="text-gray-500 text-center mt-2">{/* Testo informativo */}</p>
+        <PerfumeForm value={perfume} onSubmit={handleEdit} />
+        {isError.isError && (
+          <div className="mt-4 p-4 border-l-4 border-red-500 bg-red-50 text-red-700 rounded">
+            <strong className="font-semibold">Something went wrong</strong>
+            <p>{isError.message}</p>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -25,27 +25,33 @@ function SignIn() {
   };
 
   return (
-    <div className="flex flex-col p-2">
-      <h1>SignIn page</h1>
-      <form className="w-[400px] flex flex-col gap-2" onSubmit={handleSubmit}>
-        <input
-          className="border-2 border-slate-400 p-2"
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          className="border-2 border-slate-400 p-2"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button
-          className={`bg-green-700 ${formValidation ? "bg-green-200" : ""} p-2`}
-          disabled={formValidation}
-          type="submit"
-        >
-          Sing-up
-        </button>
-      </form>
+    <div className="flex items-center justify-center min-h-screen bg-gray-50 p-4">
+      <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
+        <h1 className="text-2xl font-semibold text-gray-800 mb-6">Sign In</h1>
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+          <input
+            type="email"
+            className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button
+            className={`bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-lg transition-colors duration-300 ${formValidation ? "opacity-50 cursor-not-allowed" : ""}`}
+            disabled={formValidation}
+            type="submit"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
