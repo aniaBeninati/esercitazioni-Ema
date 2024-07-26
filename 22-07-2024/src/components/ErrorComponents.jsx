@@ -1,4 +1,6 @@
-function ErrorComponent({children,  message }) {
+import { labels } from "../data/labels";
+
+function ErrorComponents({children,  message }) {
     return (
       <div className="grid h-screen place-content-center bg-white px-4">
         <div className="text-center">
@@ -32,4 +34,4 @@ function ErrorComponent({children,  message }) {
     );
   }
   
-  export default ErrorComponent;
+  export default ErrorComponents;

@@ -123,7 +123,7 @@ function App() {
                         <tr key={perfume.id}>
                           <td className="px-6 py-4 font-medium text-gray-900">{perfume.name}</td>
                           <td className="px-6 py-4 text-gray-700">{perfume.brand}</td>
-                          <td className="px-6 py-4 text-gray-700">{perfume.fragrances.join(', ')}</td>
+                          <td className="px-6 py-4 text-gray-700">{perfume.fragrances}</td>
                           <td className="px-6 py-4 text-gray-700">{perfume.price} €</td>
                           <td className="px-6 py-4 flex gap-2">
                             <Link
