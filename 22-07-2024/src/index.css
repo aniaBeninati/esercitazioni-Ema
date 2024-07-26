@@ -12,8 +12,10 @@
 }
 
 body {
-  background: url('https://media.istockphoto.com/id/1399637805/it/foto/vista-dallalto-posa-piatta-di-una-serie-di-bottiglie-di-profumo-su-uno-sfondo-bianco-beige.webp?b=1&s=170667a&w=0&k=20&c=acJZOYWa5tjSz4U-isDucgpU3HdUOXq5dHXyvjTBLsk=') no-repeat center center fixed;
+  background: url('https://images.pexels.com/photos/14893032/pexels-photo-14893032.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center fixed;
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 button {
