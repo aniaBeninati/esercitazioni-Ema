@@ -43,7 +43,7 @@ Quinto rilascio:
 
 perfumes = [
 {
-                    "isbn": "1",
+                    "id": "1",
                     "name": "Esempio Profumo 1",
                     "brand": "Casa Profumi 1",
                     "description": "Descrizione del profumo 1",
@@ -53,7 +53,7 @@ perfumes = [
                     "imageUrl": "http://example.com/image1.jpg"
                     },
                     {
-                    "isbn": "2",
+                    "id": "2",
                     "name": "Esempio Profumo 2",
                     "brand": "Casa Profumi 2",
                     "description": "Descrizione del profumo 2",
@@ -75,7 +75,7 @@ Questa API include le seguenti funzionalità:
 
 Ogni profumo ha i seguenti campi:
 
-- **isbn**: string (Identificativo univoco del profumo)
+- **id**: string (Identificativo univoco del profumo)
 - **name**: string (Titolo del profumo)
 - **brand**: string (Marca del profumo)
 - **description**: string (Descrizione del profumo)
