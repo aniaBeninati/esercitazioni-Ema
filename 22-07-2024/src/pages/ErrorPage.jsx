@@ -1,7 +1,7 @@
 import ErrorComponents from "../components/ErrorComponents";
 import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { labels } from "../data/pippi";
+import { labels } from "../data/labels";
 
 function ErrorPage() {
   const error = useRouteError();

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { labels } from "../data/pippi";
+import { labels } from "../data/labels";
 
 const menuList = [
   { name: labels.navHome, path: "/" },

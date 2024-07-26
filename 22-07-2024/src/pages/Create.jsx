@@ -2,7 +2,7 @@ import { useState } from "react";
 import { addPerfume } from "../api/perfumeClient";
 import { useNavigate } from "react-router-dom";
 import PerfumeForm from "../components/PerfumeForm";
-import { labels } from "../data/pippi";
+import { labels } from "../data/labels";
 import { toast } from "react-toastify";
 
 function Create() {

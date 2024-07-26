@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import { getPerfumeList, deletePerfume } from "./api/perfumeClient";
-import { labels } from "./data/pippi";
+import { labels } from "./data/labels";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import { UserContext } from "./context/AuthContext";
