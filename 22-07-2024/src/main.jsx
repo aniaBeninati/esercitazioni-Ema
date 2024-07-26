@@ -14,10 +14,13 @@ import PerfumeDetailPage from "./pages/PerfumeDetailPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Create from "./pages/Create.jsx";
 import Edit from "./pages/Edit.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Inizializza Firebase
 initializeApp(firebaseConfig);
 
+// Configura il router
 const router = createBrowserRouter([
     {
         path: "/",
@@ -56,10 +59,23 @@ const router = createBrowserRouter([
     },
 ]);
 
+// Renderizza l'applicazione
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <AuthContext>
             <RouterProvider router={router} />
         </AuthContext>
+        <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+        />
     </React.StrictMode>
 );

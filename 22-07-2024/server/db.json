@@ -1,4 +1,5 @@
-const perfumes = [
+{
+    const perfumes = [
     {
         "id ": "1",
         "name": "Chanel No. 5",
@@ -608,3 +609,4 @@ const perfumes4 = [
         "imageUrl": "https://example.com/luna_rossa.jpg"
     }
 ];
+}

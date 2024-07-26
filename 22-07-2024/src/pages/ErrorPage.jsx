@@ -1,6 +1,7 @@
 import ErrorComponents from "../components/ErrorComponents";
 import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { labels } from "../data/labels";
 
 function ErrorPage() {
   const error = useRouteError();
@@ -8,7 +9,7 @@ function ErrorPage() {
     <div>
       <ErrorComponents message={error.statusText || error.message}>
         <Link className="bg-green-300" to="/">
-          Go back Home
+          {labels.goBackHome}
         </Link>
       </ErrorComponents>
     </div>

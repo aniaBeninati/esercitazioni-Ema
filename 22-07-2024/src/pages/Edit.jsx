@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getPerfumeDetail, editPerfume } from "../api/perfumeClient";
 import PerfumeForm from "../components/PerfumeForm";
+import { toast } from "react-toastify";
 
 function Edit() {
   const { id } = useParams();
@@ -17,7 +18,11 @@ function Edit() {
       setPerfume(data);
     } catch (error) {
       console.log(error);
-      setIsError({ message: error.message, isError: true });
+      setIsError((prevState) => ({
+        ...prevState,
+        message: error.message,
+        isError: true,
+      }));
     } finally {
       setIsLoading(false);
     }
@@ -27,14 +32,22 @@ function Edit() {
     getPerfume(id);
   }, [id]);
 
-  const handleSubmit = async (value) => {
+  const handleEdit = async (body) => {
     try {
-      const res = await editPerfume({ ...value, id });
-      console.log(res);
-      navigate("/");
+      const res = await editPerfume({ id, ...body });
+      toast.success(`Profumo ${body.name} modificato con successo!`, {
+        position: "top-right",
+      });
+      navigate(`/perfumes/${id}`, { replace: true });
     } catch (error) {
-      console.log(error);
-      setIsError({ message: error.message, isError: true });
+      toast.error(`${error}!`, {
+        position: "top-right",
+      });
+      setIsError((prevState) => ({
+        ...prevState,
+        message: error.message,
+        isError: true,
+      }));
     }
   };
 
@@ -50,7 +63,7 @@ function Edit() {
           <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
             Inserisci ID, nome, marca, descrizione, prezzo, fragranze, genere, immagine
           </p>
-          <PerfumeForm value={perfume} onSubmit={handleSubmit} />
+          <PerfumeForm value={perfume} onSubmit={handleEdit} />
           {isError.isError && (
             <div
               role="alert"

@@ -16,7 +16,6 @@ function PerfumeForm({ value, onSubmit }) {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState({ message: "", isError: false });
 
- 
   const formValidation =
     !form.id ||
     !form.name ||
@@ -27,32 +26,26 @@ function PerfumeForm({ value, onSubmit }) {
     !form.genre ||
     !form.imageUrl;
 
-  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setIsError({ message: "", isError: false });
-
-    try {
-      await onSubmit(form);
-    } catch (error) {
-      console.log(error);
-      setIsError({ message: error.message, isError: true });
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <div>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={async (e) => {
+          e.preventDefault();
+          setIsLoading(true);
+          try {
+            await onSubmit(form);
+          } catch (error) {
+            console.log(error);
+            setIsError({ message: error.message, isError: true });
+          } finally {
+            setIsLoading(false);
+          }
+        }}
         className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
       >
         <div>

@@ -1,13 +1,16 @@
 import { NavLink } from "react-router-dom";
-import { labels } from "../data/Labels";
+import { labels } from "../data/labels";
 
-const menuList = [{ name: labels.navHome, path: "/" }];
+const menuList = [
+    { name: labels.navHome, path: "/" },
+    { name: "Create", path: "/create" }, 
+];
 
 const NavBar = () => {
     return (
         <nav className="flex items-center justify-between py-2 px-4 bg-slate-300">
             <NavLink to={"/"}>
-                <h1 className="font-bold">{labels.perfumeList}</h1>
+                <h1 className="font-bold">{labels.perfumeList}</h1> {/* Titolo aggiornato */}
             </NavLink>
             <ul className="flex gap-4">
                 {menuList.map((item, index) => (
