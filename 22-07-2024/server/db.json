@@ -53,18 +53,6 @@
       ]
     },
     {
-      "id": "5",
-      "name": "Bleu de Chanel",
-      "brand": "Chanel",
-      "price": 95,
-      "fragrances": [
-        "Citrus",
-        "Vetiver",
-        "Cedar",
-        "Sandalwood"
-      ]
-    },
-    {
       "id": "6",
       "name": "La Vie Est Belle",
       "brand": "Lancôme",
@@ -110,19 +98,6 @@
         "Ylang-Ylang",
         "Damascus Rose",
         "Jasmine"
-      ]
-    },
-    {
-      "id": "10",
-      "name": "Black Orchid",
-      "brand": "Tom Ford",
-      "price": 140,
-      "fragrances": [
-        "Truffle",
-        "Ylang-Ylang",
-        "Black Currant",
-        "Orchid",
-        "Patchouli"
       ]
     },
     {
@@ -748,8 +723,14 @@
         "Mint",
         "Ambergris"
       ]
+    },
+    {
+      "id": "aaef1097-064f-49ef-899f-72d826cdaf3a",
+      "name": "Intense Café",
+      "brand": "Montale",
+      "price": "155.00",
+      "fragrances": " Coffee,     Rose,     Vanilla\",     Amber,     White Musk"
     }
-  
   ],
   "perfume-details": [
     {
@@ -765,7 +746,7 @@
         "Rose",
         "Sandalwood"
       ],
-      "genre": "femminile",
+      "genre": "maschile",
       "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw0a5abbb6/images/hi-res/SKU/SKU_4/337229_swatch.jpg?sw=585&sh=585&sm=fit"
     },
     {
@@ -814,21 +795,6 @@
       ],
       "genre": "femminile",
       "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwb7650ff9/images/hi-res/SKU/SKU_666/467347_swatch.jpg?sw=585&sh=585&sm=fit"
-    },
-    {
-      "id": "5",
-      "name": "Bleu de Chanel",
-      "brand": "Chanel",
-      "description": "A sophisticated and contemporary scent with a blend of citrus and woods.",
-      "price": 95,
-      "fragrances": [
-        "Citrus",
-        "Vetiver",
-        "Cedar",
-        "Sandalwood"
-      ],
-      "genre": "maschile",
-      "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw315718a0/images/hi-res/SKU/SKU_3/304707_swatch.jpg?sw=585&sh=585&sm=fit"
     },
     {
       "id": "6",
@@ -889,22 +855,6 @@
       ],
       "genre": "femminile",
       "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw046c217c/images/hi-res/SKU/SKU_6/71388_swatch.jpg?sw=585&sh=585&sm=fit"
-    },
-    {
-      "id": "10",
-      "name": "Black Orchid",
-      "brand": "Tom Ford",
-      "description": "A luxurious and sensual fragrance with a blend of rich, dark accords.",
-      "price": 140,
-      "fragrances": [
-        "Truffle",
-        "Ylang-Ylang",
-        "Black Currant",
-        "Orchid",
-        "Patchouli"
-      ],
-      "genre": "unisex",
-      "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw59e149db/images/hi-res/SKU/159531_swatch.jpg?sw=585&sh=585&sm=fit"
     },
     {
       "id": "11",
@@ -1679,6 +1629,16 @@
       ],
       "genre": "maschile",
       "imageUrl": "https://www.sephora.it/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw27d70355/images/hi-res/SKU/SKU_5585/670441_swatch.jpg?sw=585&sh=585&sm=fit"
+    },
+    {
+      "id": "aaef1097-064f-49ef-899f-72d826cdaf3a",
+      "name": "Intense Café",
+      "brand": "Montale",
+      "description": "A rich and exotic fragrance that combines the aroma of roasted coffee with floral and vanilla notes.",
+      "price": "155.00",
+      "fragrances": " Coffee,     Rose,     Vanilla\",     Amber,     White Musk",
+      "genre": "unisex",
+      "imageUrl": "https://2.bp.blogspot.com/-dzVh4wK-C9I/VbeVeY9VidI/AAAAAAAACIE/a6pVPScDEfg/s1600/437%2B-%2BMontale%2B-%2BBlack%2BAoud.jpg"
     }
   ]
 }
