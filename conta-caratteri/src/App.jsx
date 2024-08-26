@@ -4,7 +4,6 @@ function App() {
   const [text, setText] = useState('');
 
   const characterCount = text.length;
-  const characterCountNoSpaces = text.replace(/\s/g, '').length;
 
   return (
     <div className="min-h-screen bg-slate-700 text-white p-8">
@@ -17,7 +16,6 @@ function App() {
       />
       <div className="mt-4">
         <p>Caratteri: {characterCount}</p>
-        <p>Caratteri (spazi esclusi): {characterCountNoSpaces}</p>
       </div>
     </div>
   );
