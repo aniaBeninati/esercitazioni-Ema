@@ -1,11 +1,11 @@
-Dopo aver analizzato il codice del mini-compilatore, sono arrivata queste conclusioni e quindi a queste risposte alle tue domande:
+Dopo aver analizzato il codice del mini-compilatore, sono arrivata a queste conclusioni e quindi a queste risposte alle tue domande:
 
 1. Le principali componenti del mini-compilatore che si possono individuare nel codice sono:
 
    - Tokenizer: Immaginando di avere una frase, il Tokenizer prende questa frase e la spezza in parole e segni di punteggiatura. Nel contesto del codice, invece prende un programma scritto 
 e lo divide in piccoli pezzi chiamati "token", che sono come le parole per il linguaggio di programmazione. Quindi suddivide il codice di input in token.
    - Parser: Converte i token cioè  il codice è stato diviso in token, il parser prende questi pezzi e li organizza in una struttura ad albero chiamata AST (Abstract Syntax Tree). È come prendere una frase spezzata e costruire una frase completa che ha senso. 
-   - Traverser: Una volta che hai l'albero (AST), il traverser lo attraversa, cioè visita ogni parte dell'albero per vedere cosa c'è dentro. È come esplorare ogni ramo di un albero per vedere tutte le foglie.
+   - Traverser: Una volta che si ha l'albero (AST), il traverser lo attraversa, cioè visita ogni parte dell'albero per vedere cosa c'è dentro. È come esplorare ogni ramo di un albero per vedere tutte le foglie.
    - Transformer: Questo componente prende l'albero originale e lo modifica, trasformandolo in un nuovo albero. È come prendere un albero e cambiare alcune foglie o rami per creare una nuova forma.
    - Code Generator: Alla fine, il Code Generator prende l'albero trasformato e lo converte in codice. È come prendere un disegno dell'albero e scrivere una descrizione su come costruirlo.
    - Compiler: Funzione principale che collega tutte le componenti precedenti. Questo è il "capo" che coordina tutto. Chiama tutti i componenti (Tokenizer, Parser, ecc.) nell'ordine giusto per convertire il codice sorgente in un nuovo codice.
