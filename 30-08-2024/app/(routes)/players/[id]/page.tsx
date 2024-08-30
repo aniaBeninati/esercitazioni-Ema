@@ -1,25 +1,17 @@
-import { GETBYID } from "@/app/api/players/[number]/route";
+import { GET } from "@/app/api/players/[id]/route";
 import { IPlayer } from "../../../(models)/IPlayer";
 import Image from "next/image";
 
 interface PlayerDetailProps {
-  params: { number: string };
+  params: { id: string };
 }
 
 const PlayerDetail = async ({ params }: PlayerDetailProps) => {
-  const { number } = params;
-  console.log(params);
-  if (!number) {
-    return <div>Giocatore non trovato</div>;
-  }
+  const { id } = params;
 
-  // Correggi la chiamata all'API, usa il percorso corretto
-  const response = await GETBYID;
+  
+  const response = await GET({ params: { id } });
   const data = await response.json();
-
-  if (!data) {
-    return <div>Giocatore non trovato</div>;
-  }
 
   return (
     <div className="container mx-auto p-8">
@@ -31,9 +23,11 @@ const PlayerDetail = async ({ params }: PlayerDetailProps) => {
         height={400}
         className="mx-auto"
       />
-      <p>Status: {data.status}</p>
-      <p>Species: {data.species}</p>
+      <p>Name: {data.name}</p>
       <p>Surname: {data.surname}</p>
+      <p>Position: {data.position}</p>
+      <p>Number: {data.number}</p>
+      <p>Nationality: {data.nationality}</p>
     </div>
   );
 };

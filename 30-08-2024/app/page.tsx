@@ -10,7 +10,7 @@ const HomePage = () => {
           fill
           style={{ 
             objectFit: 'cover',
-            objectPosition: 'center 90%' // Questo sposta l'immagine leggermente verso l'alto
+            objectPosition: 'center 90%' 
           }}
           priority 
         />

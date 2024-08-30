@@ -4,6 +4,7 @@ mongoose.connect(process.env.MONGODB_URI!);
 mongoose.Promise = global.Promise;
 
 const playerSchema = new Schema({
+  id: { type: String, required: true },
   name: { type: String, required: true },
   surname: { type: String, required: true },
   position: { type: String, required: true }, 

@@ -25,7 +25,7 @@ const Card: React.FC<ICardProps> = ({ player }) => {
         <p className="mb-3"><span className="font-semibold">Nationality:</span> {player.nationality}</p>
       </div>
       <Link
-        href={`/players/${player.number}`}
+        href={`/players/${player._id}`}
         className="text-pink-500 hover:text-pink-700 transition duration-300 ease-in-out mt-auto font-semibold"
       >
         View Details

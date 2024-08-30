@@ -16,7 +16,7 @@ const HomePage = async () => {
   return (
     <div className="grid grid-cols-4 gap-4 p-8">
       {players.map((player) => (
-        <Card key={player.number} player={player} />
+        <Card key={player._id} player={player} />
       ))}
     </div>
   );

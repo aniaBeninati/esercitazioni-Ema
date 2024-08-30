@@ -1,20 +1,12 @@
 import { NextResponse, NextRequest } from "next/server";
+import { ObjectId } from "mongodb";
 import Player from "../../../(models)/Player";
 
-export async function GETBYID(req: NextRequest) {
+export async function GET({ params }: { params: { id: string } }) {
   try {
-    const url = new URL(req.url);
-    const number = url.searchParams.get("number");
-    console.log(number);
+    const { id } = params;
 
-    if (!number) {
-      return NextResponse.json(
-        { message: "Number parameter is missing" },
-        { status: 400 }
-      );
-    }
-
-    const player = await Player.findOne({ number: number });
+    const player = await Player.findOne({ _id: new ObjectId(id) });
 
     if (!player) {
       return NextResponse.json(
