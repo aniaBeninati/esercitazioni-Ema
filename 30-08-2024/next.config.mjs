@@ -6,12 +6,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "rickandmortyapi.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "is1-ssl.mzstatic.com",
+        hostname: "lh4.googleusercontent.com",
         pathname: "/**",
       },
       {

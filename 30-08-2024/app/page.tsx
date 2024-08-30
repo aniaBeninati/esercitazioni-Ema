@@ -4,10 +4,10 @@ const HomePage = () => {
   return (
     <div className="flex justify-center items-center h-full p-8">
       <Image 
-        src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/36/92/fb/3692fb2c-c241-4816-7a8e-e4f941ff64ca/794043208225.jpg/1200x1200bf-60.jpg" 
+        src="https://lh4.googleusercontent.com/proxy/ifcDFsRHpXzKeHktR8wErYSkLCn0H2LMZMSMRb9lR6VaNjYY8OKwLGXt7XeVYjVakIBBwGHQnmFisOho0vlH49vL_hpogPkCtBRarBKwdM0XzwIzp4uALU0OaPr44BVVqQM2m7bc9OIr=w1200-h630-p-k-no-nu" 
         alt="Home Image"
-        width={1200} 
-        height={1200} 
+        width={1400} 
+        height={1400} 
         className="max-w-full max-h-full object-contain"
         priority 
       />

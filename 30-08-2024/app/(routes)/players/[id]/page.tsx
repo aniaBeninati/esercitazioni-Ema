@@ -1,15 +1,25 @@
-import { GETBYID } from "@/app/api/route";
+import { GETBYID } from "@/app/api/players/[number]/route";
 import { IPlayer } from "../../../(models)/IPlayer";
 import Image from "next/image";
 
 interface PlayerDetailProps {
-  player: IPlayer;
+  params: { number: string };
 }
 
-const PlayerDetail = async ({ params }: { params: { number: string } }) => {
+const PlayerDetail = async ({ params }: PlayerDetailProps) => {
   const { number } = params;
-  const response = await GETBYID(number);
+  console.log(params);
+  if (!number) {
+    return <div>Giocatore non trovato</div>;
+  }
+
+  // Correggi la chiamata all'API, usa il percorso corretto
+  const response = await GETBYID;
   const data = await response.json();
+
+  if (!data) {
+    return <div>Giocatore non trovato</div>;
+  }
 
   return (
     <div className="container mx-auto p-8">

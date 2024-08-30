@@ -13,7 +13,7 @@ function NavBar() {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-gradient-to-r from-purple-800 via-blue-700 to-pink-600 p-4 text-white shadow-lg">
+    <nav className="bg-gradient-to-r from-pink-500 to-black p-4 text-white shadow-lg">
       <ul className="flex gap-8 justify-center">
         {navItems.map((item) => (
           <li
@@ -21,11 +21,11 @@ function NavBar() {
             className={`transition-all duration-300 ease-in-out ${
               pathname === item.path
                 ? "border-b-2 border-white"
-                : "hover:opacity-80"
+                : "hover:text-pink-300"
             }`}
           >
             <Link href={item.path}>
-              <span className="text-lg font-semibold text-white">
+              <span className="text-lg font-semibold">
                 {item.value}
               </span>
             </Link>

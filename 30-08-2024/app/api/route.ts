@@ -10,17 +10,3 @@ export async function GET() {
     return NextResponse.json({ message: "Error", error }, { status: 500 });
   }
 }
-
-export async function GETBYID(
-  req: NextRequest,
-  { params }: { params: { number: string } }
-) {
-  try {
-    const { number } = params;
-    const players = await Player.findById(number);
-
-    return NextResponse.json({ players }, { status: 200 });
-  } catch (error) {
-    return NextResponse.json({ message: "Error", error }, { status: 500 });
-  }
-}
