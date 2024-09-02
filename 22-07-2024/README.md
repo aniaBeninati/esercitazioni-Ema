@@ -1,8 +1,49 @@
-# PRD (Project Requirements Document)
+# Project Requirements Document (PRD) - PerfumeHub
 
-### Purpose and scope
+![Screenshot](./Screenshot.png)
 
-- Avere un applicativo che ci permetta di gestire tutti i profumi del nostro negozio on-line.
+## 📋 Scopo e Obiettivo
+
+L'obiettivo del progetto PerfumeHub è sviluppare un'applicazione per gestire il catalogo dei profumi di un negozio online. Il sistema deve permettere ai dipendenti di gestire, aggiornare e visualizzare i profumi.
+
+## 🌟 Panoramica del Prodotto e Casi d'Uso
+
+PerfumeHub è una piattaforma che permette ai dipendenti di:
+
+1. **Cercare** un profumo tra una lista di profumi.
+2. **Visualizzare** i dettagli di un profumo specifico.
+3. **Filtrare** la lista dei profumi per migliorare la ricerca.
+
+### Requisiti per il Primo Rilascio: MVP
+
+- **Ricerca dei Profumi**: Come dipendente, voglio poter cercare un profumo all’interno del gestionale.
+- **Dettagli del Profumo**: Come dipendente, voglio poter vedere il dettaglio di un profumo.
+- **Filtraggio della Lista**: Come dipendente, voglio poter filtrare la mia lista di profumi.
+
+### Requisiti per il Secondo Rilascio: Update / Edit / Delete
+
+- **Aggiunta di Profumi**: Come dipendente, voglio poter aggiungere un profumo alla lista di profumi.
+- **Aggiornamento di Profumi**: Come dipendente, voglio poter aggiornare un profumo nella lista di profumi.
+- **Cancellazione di Profumi**: Come dipendente, voglio poter cancellare un profumo dalla lista di profumi.
+
+### Requisiti per il Terzo Rilascio
+
+- **Lista Preferiti**: Come utente, voglio poter inserire un profumo all’interno di una lista di profumi preferiti.
+
+### Requisiti per il Quarto Rilascio: Toast
+
+- **Feedback delle Operazioni**: Come dipendente, voglio poter sapere se ogni operazione effettuata sul catalogo va a buon fine (con notifiche toast).
+
+### Requisiti per il Quinto Rilascio
+
+- **Area Riservata**: Come dipendente finale, voglio avere un’area riservata dove gestire le mie informazioni.
+
+## 🛠️ Requisiti Tecnici
+
+- **Frontend**: React per costruire l'interfaccia utente.
+- **Deploy**: Vercel per il deployment dell'applicazione.
+- **Simulazione di Database**: Utilizzo di dati simulati in memoria per la gestione dei profumi.
+
 
 ### Product overview and use cases
 
