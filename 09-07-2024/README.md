@@ -19,9 +19,7 @@ La sfida principale era realizzare un catalogo con massima libertà espressiva, 
 
 Realizzare un catalogo di qualunque cosa desideriate, con massima libertà espressiva. Nel catalogo dovremo poter aggiungere elementi tramite una form e mostrarli a video, con la possibilità di cancellarli, proprio come abbiamo fatto ieri. Questa volta, però, avremo bisogno di uno stato per filtrare gli elementi del catalogo. Scegliete voi come filtrare i dati. Ad esempio, in un catalogo di Pokémon, potremmo filtrare per mostrare tutti i Pokémon di tipo acqua.
 
-### Screenshot dell'esempio da seguire
-
-#Struttura Progetto
+## 📂 Struttura del Progetto
 
 my-plant-catalog/
 ├── src/
@@ -35,8 +33,6 @@ my-plant-catalog/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
-
-## 📂 Struttura del Progetto
 
 Il repository è organizzato come segue:
 ## 🎨 Funzionalità Principali
