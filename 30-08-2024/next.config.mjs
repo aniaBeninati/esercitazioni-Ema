@@ -13,7 +13,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "storage1348.cdn-immedia.net",
         pathname: "/**",
-      },
+      }
     ],
   },
 };

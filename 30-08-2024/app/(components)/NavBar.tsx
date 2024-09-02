@@ -21,11 +21,11 @@ function NavBar() {
             className={`transition-all duration-300 ease-in-out ${
               pathname === item.path
                 ? "border-b-2 border-white"
-                : "hover:text-pink-300"
+                : ""
             }`}
           >
             <Link href={item.path}>
-              <span className="text-lg font-semibold">
+              <span className="text-lg font-semibold text-white hover:text-pink-300">
                 {item.value}
               </span>
             </Link>
