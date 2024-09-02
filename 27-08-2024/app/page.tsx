@@ -42,9 +42,9 @@ const monuments: ICard[] = [
     category: "Food",
     title: "Cannolo Siciliano",
     description: "Dolce tipico siciliano con una croccante cialda e ripieno di ricotta.",
-    imageUrl: "https://ttattago.s3.eu-west-1.amazonaws.com/B7BxeGYd1AJxoPA2dvc1oqep?response-content-disposition=inline%3B%20filename%3D%22cannolo-siciliano-pasticceria-capizzi-ttatta-go-01.jpg%22%3B%20filename%2A%3DUTF-8%27%27cannolo-siciliano-pasticceria-capizzi-ttatt%25C3%25A0-go-01.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXGJCPR5KQANNROT4%2F20240827%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240827T144959Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=816c8260c19ee7598989ee8751568b57fe2772e52e0549825b7fbf046cc771ab",
+    imageUrl: "https://assets.afcdn.com/recipe/20170207/11400_w3072h2304c1cx1500cy1000.jpg"
   },
-  {
+    {
     id: "7",
     category: "Sea",
     title: "Spiaggia di Mondello",
